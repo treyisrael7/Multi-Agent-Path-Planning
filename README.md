@@ -29,7 +29,7 @@ A Python-based visualization tool for multi-agent pathfinding algorithms in a gr
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/treyisrael7/Multi-Agent-Path-Planning
 cd path-planning
 ```
 
