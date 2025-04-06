@@ -7,7 +7,7 @@ class BaseConfig:
     def __init__(self):
         self.size = 40
         self.num_agents = 5
-        self.num_goals = 30
+        self.num_goals = 200
         self.num_obstacles = 20
         self.cell_size = 15
         
@@ -20,7 +20,7 @@ class BaseConfig:
         return {
             'cluster_size': 2,
             'spread': 4,
-            'max_attempts': 50
+            'max_attempts': 1000
         }
 
 class DenseConfig(BaseConfig):
@@ -42,7 +42,7 @@ class DenseConfig(BaseConfig):
         return {
             'cluster_size': 8,
             'spread': 6,
-            'max_attempts': 25
+            'max_attempts': 1000
         }
 
 class SparseConfig(BaseConfig):
@@ -62,9 +62,9 @@ class SparseConfig(BaseConfig):
     def get_goal_placement_strategy(self):
         """Sparse spread out goal placement"""
         return {
-            'cluster_size': 2,
-            'spread': 8,
-            'max_attempts': 50
+            'cluster_size': 4,
+            'spread': 10,
+            'max_attempts': 1000
         }
 
 # Dictionary of available configurations
