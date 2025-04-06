@@ -1,62 +1,119 @@
-# Path Planning with Reinforcement Learning
+# Multi-Agent Pathfinding Simulation
 
-This project implements a multi-agent path planning system using reinforcement learning, specifically PPO (Proximal Policy Optimization).
+A Python-based visualization tool for multi-agent pathfinding algorithms in a grid world environment. Watch as multiple agents navigate through obstacles to collect goals using different pathfinding strategies.
 
-## Project Structure
-```
-.
-├── env/                    # Environment implementation
-│   └── multi_agent_env.py # Grid world environment
-├── models/                 # Model implementations and training
-│   ├── train_ppo.py       # PPO training script
-│   ├── evaluate_model.py  # Model evaluation
-│   └── common.py          # Common utilities for models
-├── utils/                 # Utility functions
-│   └── visualize.py      # Visualization tools
-└── scripts/              # Training and evaluation scripts
-```
+## Features
 
-## Setup
+- **Multiple Pathfinding Algorithms**
+  - A* (default) - Efficient pathfinding using heuristic search
+  - Dijkstra's - Guaranteed shortest path finding
+  
+- **Environment Configurations**
+  - Dense - Challenging environment with many goals and obstacles
+  - Sparse - More open environment with spread out goals
+  
+- **Real-time Visualization**
+  - Color-coded grid cells (agents, goals, obstacles)
+  - Numbered agents for easy tracking
+  - Visible pathfinding trails
+  - Status panel with live statistics
+  - Interactive controls
 
-1. Create a virtual environment:
+## Requirements
+
+- Python 3.6+
+- Pygame
+- NumPy
+
+## Installation
+
+1. Clone the repository:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+git clone <repository-url>
+cd path-planning
 ```
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install pygame numpy
 ```
 
-## Training
+## Usage
 
-To train the model:
+Run the simulation with different configurations and algorithms:
+
 ```bash
-python models/train_ppo.py
+# Default (Dense configuration with A*)
+python main.py
+
+# Dense environment with Dijkstra's algorithm
+python main.py dense dijkstra
+
+# Sparse environment with A*
+python main.py sparse astar
 ```
 
-## Evaluation
+### Controls
 
-To evaluate a trained model:
-```bash
-python models/evaluate_model.py
+- **SPACE** - Pause/Resume simulation
+- **R** - Reset environment
+- **ESC** - Quit simulation
+
+### Environment Configurations
+
+1. **Dense** (Default)
+   - Grid: 100x100
+   - Agents: 5
+   - Goals: 200 (clustered)
+   - Obstacles: 30
+   - Cell Size: 7px
+
+2. **Sparse**
+   - Grid: 60x60
+   - Agents: 5
+   - Goals: 30 (spread out)
+   - Obstacles: 25
+   - Cell Size: 15px
+
+## Project Structure
+
+```
+path_planning/
+├── algorithms/
+│   └── pathfinding/
+│       ├── astar.py
+│       └── dijkstra.py
+├── env/
+│   ├── configurations.py
+│   ├── grid_world.py
+│   ├── path_manager.py
+│   └── movement_manager.py
+├── visualization/
+│   ├── renderer.py
+│   ├── controls.py
+│   └── visualizer.py
+└── main.py
 ```
 
-## Environment
+## Visualization Features
 
-The environment is a grid world where agents need to reach goals while avoiding obstacles:
-- Multiple agents can be present
-- Multiple goals to collect
-- Obstacles to avoid
-- Continuous rewards for progress towards goals
-- Early termination on collision with obstacles
+- **Grid Display**
+  - White: Empty cells
+  - Orange: Agents (numbered 1-5)
+  - Green: Goals
+  - Gray: Obstacles
+  - Blue: Pathfinding trails
 
-## Model Architecture
+- **Status Panel**
+  - Step counter
+  - Goals collected/remaining
+  - Time elapsed
+  - Control reminders
 
-Using PPO with:
-- MLP Policy network: [128, 128, 64]
-- Value network: [128, 128, 64]
-- Learning rate: 1e-4
-- Parallel environments: 8
-- Batch size: 128
+## Contributing
+
+Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
