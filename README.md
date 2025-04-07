@@ -61,19 +61,12 @@ python main.py sparse astar
 
 ### Environment Configurations
 
-1. **Dense** (Default)
+1. **Dense/Sparse**
    - Grid: 100x100
    - Agents: 5
    - Goals: 200 (clustered)
    - Obstacles: 30
    - Cell Size: 7px
-
-2. **Sparse**
-   - Grid: 60x60
-   - Agents: 5
-   - Goals: 30 (spread out)
-   - Obstacles: 25
-   - Cell Size: 15px
 
 ## Project Structure
 
