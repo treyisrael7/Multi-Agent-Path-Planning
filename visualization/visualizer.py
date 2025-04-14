@@ -35,7 +35,9 @@ class Visualizer:
                 state = self.env.get_state()
                 
                 # Step environment
-                done, moves, goals_collected = self.env.step()
+                grid, agent_positions, goal_positions, done, info = self.env.step()
+                moves = info['moves']
+                goals_collected = info['goals_collected']
                 
                 # Render current state
                 self.renderer.render(state['grid'], state['paths'], moves, goals_collected)

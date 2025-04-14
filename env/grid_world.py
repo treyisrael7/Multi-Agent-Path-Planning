@@ -34,11 +34,14 @@ class GridWorld:
     
     def get_state(self):
         """Get the current state of the environment"""
+        # Extract just the paths from the (path, metrics) tuples
+        paths = [path for path, _ in self.path_manager.paths] if self.path_manager.paths else []
+        
         return {
             'grid': self.grid.copy(),
             'agents': self.agent_positions.copy(),
             'goals': self.goal_positions.copy(),
-            'paths': [path.copy() if path else [] for path in self.path_manager.paths]
+            'paths': [path.copy() if path else [] for path in paths]
         }
     
     def get_valid_actions(self, agent_idx):
@@ -73,7 +76,11 @@ class GridWorld:
                 self.goal_positions
             )
         
-        return len(self.goal_positions) == 0, moves, goals_collected
+        # Check if episode is done
+        done = len(self.goal_positions) == 0
+        
+        # Return the expected 5 values
+        return self.grid, self.agent_positions, self.goal_positions, done, {'moves': moves, 'goals_collected': goals_collected}
     
     def reset(self):
         """Reset the environment with new random positions"""

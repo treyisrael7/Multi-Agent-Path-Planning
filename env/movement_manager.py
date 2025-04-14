@@ -35,20 +35,21 @@ class MovementManager:
         planned_moves = {}
         
         # Sort agents by path length
-        agents_to_move = [(len(path), i) for i, path in enumerate(paths) if path and len(path) > 1]
+        agents_to_move = [(len(path[0]), i) for i, (path, _) in enumerate(paths) if path and len(path) > 1]
         agents_to_move.sort()
         
         # Execute moves
         for _, i in agents_to_move:
-            next_pos = tuple(map(int, paths[i][1]))
+            path, _ = paths[i]
+            next_pos = tuple(path[1])
             
             if next_pos not in planned_moves and next_pos not in current_positions:
                 # Move is valid
-                agent_pos = tuple(map(int, agent_positions[i]))
+                agent_pos = tuple(agent_positions[i])
                 grid[agent_pos] = 0
                 grid[next_pos] = 3
                 agent_positions[i] = next_pos
-                paths[i] = paths[i][1:]
+                paths[i] = (path[1:], paths[i][1])  # Keep the metrics
                 planned_moves[next_pos] = i
                 moves.append((i, next_pos))
                 
