@@ -1,0 +1,706 @@
+{
+  "astar": [
+    {
+      "path_length": 108,
+      "computation_time": 0.0011391639709472656,
+      "success_rate": 1.0,
+      "nodes_expanded": 108,
+      "nodes_visited": 322
+    },
+    {
+      "path_length": 46,
+      "computation_time": 0.00033402442932128906,
+      "success_rate": 1.0,
+      "nodes_expanded": 46,
+      "nodes_visited": 131
+    },
+    {
+      "path_length": 104,
+      "computation_time": 0.012970447540283203,
+      "success_rate": 1.0,
+      "nodes_expanded": 1618,
+      "nodes_visited": 1826
+    },
+    {
+      "path_length": 35,
+      "computation_time": 0.0003521442413330078,
+      "success_rate": 1.0,
+      "nodes_expanded": 37,
+      "nodes_visited": 98
+    },
+    {
+      "path_length": 93,
+      "computation_time": 0.01580977439880371,
+      "success_rate": 1.0,
+      "nodes_expanded": 1529,
+      "nodes_visited": 1707
+    },
+    {
+      "path_length": 42,
+      "computation_time": 0.0007703304290771484,
+      "success_rate": 1.0,
+      "nodes_expanded": 154,
+      "nodes_visited": 236
+    },
+    {
+      "path_length": 150,
+      "computation_time": 0.0009105205535888672,
+      "success_rate": 1.0,
+      "nodes_expanded": 150,
+      "nodes_visited": 448
+    },
+    {
+      "path_length": 75,
+      "computation_time": 0.0004343986511230469,
+      "success_rate": 1.0,
+      "nodes_expanded": 75,
+      "nodes_visited": 223
+    },
+    {
+      "path_length": 69,
+      "computation_time": 0.008254051208496094,
+      "success_rate": 1.0,
+      "nodes_expanded": 1031,
+      "nodes_visited": 1164
+    },
+    {
+      "path_length": 38,
+      "computation_time": 0.00021886825561523438,
+      "success_rate": 1.0,
+      "nodes_expanded": 38,
+      "nodes_visited": 109
+    },
+    {
+      "path_length": 66,
+      "computation_time": 0.006500720977783203,
+      "success_rate": 1.0,
+      "nodes_expanded": 860,
+      "nodes_visited": 988
+    },
+    {
+      "path_length": 29,
+      "computation_time": 0.00017380714416503906,
+      "success_rate": 1.0,
+      "nodes_expanded": 29,
+      "nodes_visited": 83
+    },
+    {
+      "path_length": 30,
+      "computation_time": 0.0009407997131347656,
+      "success_rate": 1.0,
+      "nodes_expanded": 208,
+      "nodes_visited": 265
+    },
+    {
+      "path_length": 38,
+      "computation_time": 0.0002186298370361328,
+      "success_rate": 1.0,
+      "nodes_expanded": 38,
+      "nodes_visited": 112
+    },
+    {
+      "path_length": 76,
+      "computation_time": 0.0007364749908447266,
+      "success_rate": 1.0,
+      "nodes_expanded": 76,
+      "nodes_visited": 222
+    },
+    {
+      "path_length": 30,
+      "computation_time": 0.00044417381286621094,
+      "success_rate": 1.0,
+      "nodes_expanded": 30,
+      "nodes_visited": 88
+    },
+    {
+      "path_length": 15,
+      "computation_time": 0.00029540061950683594,
+      "success_rate": 1.0,
+      "nodes_expanded": 61,
+      "nodes_visited": 89
+    },
+    {
+      "path_length": 68,
+      "computation_time": 0.0013141632080078125,
+      "success_rate": 1.0,
+      "nodes_expanded": 79,
+      "nodes_visited": 209
+    },
+    {
+      "path_length": 86,
+      "computation_time": 0.0003669261932373047,
+      "success_rate": 1.0,
+      "nodes_expanded": 86,
+      "nodes_visited": 170
+    },
+    {
+      "path_length": 94,
+      "computation_time": 0.0009319782257080078,
+      "success_rate": 1.0,
+      "nodes_expanded": 94,
+      "nodes_visited": 278
+    },
+    {
+      "path_length": 72,
+      "computation_time": 0.0006830692291259766,
+      "success_rate": 1.0,
+      "nodes_expanded": 72,
+      "nodes_visited": 214
+    },
+    {
+      "path_length": 50,
+      "computation_time": 0.002912759780883789,
+      "success_rate": 1.0,
+      "nodes_expanded": 618,
+      "nodes_visited": 716
+    },
+    {
+      "path_length": 35,
+      "computation_time": 0.00022840499877929688,
+      "success_rate": 1.0,
+      "nodes_expanded": 35,
+      "nodes_visited": 103
+    },
+    {
+      "path_length": 46,
+      "computation_time": 0.00021386146545410156,
+      "success_rate": 1.0,
+      "nodes_expanded": 46,
+      "nodes_visited": 92
+    },
+    {
+      "path_length": 8,
+      "computation_time": 4.696846008300781e-05,
+      "success_rate": 1.0,
+      "nodes_expanded": 8,
+      "nodes_visited": 22
+    },
+    {
+      "path_length": 85,
+      "computation_time": 0.011057376861572266,
+      "success_rate": 1.0,
+      "nodes_expanded": 1589,
+      "nodes_visited": 1756
+    },
+    {
+      "path_length": 98,
+      "computation_time": 0.016609907150268555,
+      "success_rate": 1.0,
+      "nodes_expanded": 2061,
+      "nodes_visited": 2251
+    },
+    {
+      "path_length": 31,
+      "computation_time": 0.0008344650268554688,
+      "success_rate": 1.0,
+      "nodes_expanded": 165,
+      "nodes_visited": 226
+    },
+    {
+      "path_length": 77,
+      "computation_time": 0.000522613525390625,
+      "success_rate": 1.0,
+      "nodes_expanded": 86,
+      "nodes_visited": 230
+    },
+    {
+      "path_length": 41,
+      "computation_time": 0.0004284381866455078,
+      "success_rate": 1.0,
+      "nodes_expanded": 41,
+      "nodes_visited": 121
+    },
+    {
+      "path_length": 51,
+      "computation_time": 0.001898050308227539,
+      "success_rate": 1.0,
+      "nodes_expanded": 231,
+      "nodes_visited": 331
+    },
+    {
+      "path_length": 133,
+      "computation_time": 0.022942781448364258,
+      "success_rate": 1.0,
+      "nodes_expanded": 4008,
+      "nodes_visited": 4272
+    },
+    {
+      "path_length": 88,
+      "computation_time": 0.0006263256072998047,
+      "success_rate": 1.0,
+      "nodes_expanded": 88,
+      "nodes_visited": 254
+    },
+    {
+      "path_length": 68,
+      "computation_time": 0.00040435791015625,
+      "success_rate": 1.0,
+      "nodes_expanded": 68,
+      "nodes_visited": 202
+    },
+    {
+      "path_length": 116,
+      "computation_time": 0.01636052131652832,
+      "success_rate": 1.0,
+      "nodes_expanded": 1751,
+      "nodes_visited": 1962
+    },
+    {
+      "path_length": 38,
+      "computation_time": 0.002622365951538086,
+      "success_rate": 1.0,
+      "nodes_expanded": 356,
+      "nodes_visited": 428
+    },
+    {
+      "path_length": 25,
+      "computation_time": 0.0011496543884277344,
+      "success_rate": 1.0,
+      "nodes_expanded": 133,
+      "nodes_visited": 183
+    },
+    {
+      "path_length": 131,
+      "computation_time": 0.03220319747924805,
+      "success_rate": 1.0,
+      "nodes_expanded": 4248,
+      "nodes_visited": 4505
+    },
+    {
+      "path_length": 78,
+      "computation_time": 0.012396812438964844,
+      "success_rate": 1.0,
+      "nodes_expanded": 1517,
+      "nodes_visited": 1672
+    },
+    {
+      "path_length": 72,
+      "computation_time": 0.0008418560028076172,
+      "success_rate": 1.0,
+      "nodes_expanded": 72,
+      "nodes_visited": 214
+    },
+    {
+      "path_length": 61,
+      "computation_time": 0.0007388591766357422,
+      "success_rate": 1.0,
+      "nodes_expanded": 61,
+      "nodes_visited": 181
+    },
+    {
+      "path_length": 10,
+      "computation_time": 5.412101745605469e-05,
+      "success_rate": 1.0,
+      "nodes_expanded": 10,
+      "nodes_visited": 29
+    },
+    {
+      "path_length": 42,
+      "computation_time": 0.0022835731506347656,
+      "success_rate": 1.0,
+      "nodes_expanded": 298,
+      "nodes_visited": 381
+    },
+    {
+      "path_length": 102,
+      "computation_time": 0.0017070770263671875,
+      "success_rate": 1.0,
+      "nodes_expanded": 177,
+      "nodes_visited": 366
+    },
+    {
+      "path_length": 53,
+      "computation_time": 0.0006642341613769531,
+      "success_rate": 1.0,
+      "nodes_expanded": 65,
+      "nodes_visited": 160
+    },
+    {
+      "path_length": 43,
+      "computation_time": 0.0021789073944091797,
+      "success_rate": 1.0,
+      "nodes_expanded": 476,
+      "nodes_visited": 560
+    },
+    {
+      "path_length": 55,
+      "computation_time": 0.0005142688751220703,
+      "success_rate": 1.0,
+      "nodes_expanded": 55,
+      "nodes_visited": 163
+    },
+    {
+      "path_length": 51,
+      "computation_time": 0.004425525665283203,
+      "success_rate": 1.0,
+      "nodes_expanded": 587,
+      "nodes_visited": 684
+    },
+    {
+      "path_length": 134,
+      "computation_time": 0.029340267181396484,
+      "success_rate": 1.0,
+      "nodes_expanded": 4366,
+      "nodes_visited": 4630
+    },
+    {
+      "path_length": 86,
+      "computation_time": 0.001323699951171875,
+      "success_rate": 1.0,
+      "nodes_expanded": 132,
+      "nodes_visited": 297
+    }
+  ],
+  "dijkstra": [
+    {
+      "path_length": 120,
+      "computation_time": 0.06481790542602539,
+      "success_rate": 1.0,
+      "nodes_expanded": 9068,
+      "nodes_visited": 9119
+    },
+    {
+      "path_length": 63,
+      "computation_time": 0.017966747283935547,
+      "success_rate": 1.0,
+      "nodes_expanded": 3328,
+      "nodes_visited": 3408
+    },
+    {
+      "path_length": 54,
+      "computation_time": 0.01930379867553711,
+      "success_rate": 1.0,
+      "nodes_expanded": 3151,
+      "nodes_visited": 3237
+    },
+    {
+      "path_length": 119,
+      "computation_time": 0.06745624542236328,
+      "success_rate": 1.0,
+      "nodes_expanded": 8882,
+      "nodes_visited": 8937
+    },
+    {
+      "path_length": 42,
+      "computation_time": 0.021118640899658203,
+      "success_rate": 1.0,
+      "nodes_expanded": 3297,
+      "nodes_visited": 3444
+    },
+    {
+      "path_length": 91,
+      "computation_time": 0.029964923858642578,
+      "success_rate": 1.0,
+      "nodes_expanded": 5123,
+      "nodes_visited": 5224
+    },
+    {
+      "path_length": 63,
+      "computation_time": 0.012105941772460938,
+      "success_rate": 1.0,
+      "nodes_expanded": 2392,
+      "nodes_visited": 2460
+    },
+    {
+      "path_length": 122,
+      "computation_time": 0.04437971115112305,
+      "success_rate": 1.0,
+      "nodes_expanded": 8270,
+      "nodes_visited": 8326
+    },
+    {
+      "path_length": 78,
+      "computation_time": 0.02313065528869629,
+      "success_rate": 1.0,
+      "nodes_expanded": 4353,
+      "nodes_visited": 4449
+    },
+    {
+      "path_length": 91,
+      "computation_time": 0.04595947265625,
+      "success_rate": 1.0,
+      "nodes_expanded": 6422,
+      "nodes_visited": 6522
+    },
+    {
+      "path_length": 73,
+      "computation_time": 0.03749823570251465,
+      "success_rate": 1.0,
+      "nodes_expanded": 5033,
+      "nodes_visited": 5137
+    },
+    {
+      "path_length": 81,
+      "computation_time": 0.03387308120727539,
+      "success_rate": 1.0,
+      "nodes_expanded": 5255,
+      "nodes_visited": 5360
+    },
+    {
+      "path_length": 102,
+      "computation_time": 0.05790829658508301,
+      "success_rate": 1.0,
+      "nodes_expanded": 8290,
+      "nodes_visited": 8369
+    },
+    {
+      "path_length": 66,
+      "computation_time": 0.02147364616394043,
+      "success_rate": 1.0,
+      "nodes_expanded": 3769,
+      "nodes_visited": 3859
+    },
+    {
+      "path_length": 114,
+      "computation_time": 0.10486841201782227,
+      "success_rate": 1.0,
+      "nodes_expanded": 9340,
+      "nodes_visited": 9379
+    },
+    {
+      "path_length": 80,
+      "computation_time": 0.05041003227233887,
+      "success_rate": 1.0,
+      "nodes_expanded": 6665,
+      "nodes_visited": 6766
+    },
+    {
+      "path_length": 74,
+      "computation_time": 0.03544783592224121,
+      "success_rate": 1.0,
+      "nodes_expanded": 4362,
+      "nodes_visited": 4458
+    },
+    {
+      "path_length": 49,
+      "computation_time": 0.024807453155517578,
+      "success_rate": 1.0,
+      "nodes_expanded": 3329,
+      "nodes_visited": 3442
+    },
+    {
+      "path_length": 28,
+      "computation_time": 0.011349678039550781,
+      "success_rate": 1.0,
+      "nodes_expanded": 1465,
+      "nodes_visited": 1574
+    },
+    {
+      "path_length": 42,
+      "computation_time": 0.022674083709716797,
+      "success_rate": 1.0,
+      "nodes_expanded": 2935,
+      "nodes_visited": 3046
+    },
+    {
+      "path_length": 16,
+      "computation_time": 0.004374504089355469,
+      "success_rate": 1.0,
+      "nodes_expanded": 441,
+      "nodes_visited": 504
+    },
+    {
+      "path_length": 54,
+      "computation_time": 0.02305436134338379,
+      "success_rate": 1.0,
+      "nodes_expanded": 2785,
+      "nodes_visited": 2884
+    },
+    {
+      "path_length": 77,
+      "computation_time": 0.052857398986816406,
+      "success_rate": 1.0,
+      "nodes_expanded": 5966,
+      "nodes_visited": 6076
+    },
+    {
+      "path_length": 70,
+      "computation_time": 0.04010725021362305,
+      "success_rate": 1.0,
+      "nodes_expanded": 6175,
+      "nodes_visited": 6298
+    },
+    {
+      "path_length": 13,
+      "computation_time": 0.0013799667358398438,
+      "success_rate": 1.0,
+      "nodes_expanded": 272,
+      "nodes_visited": 321
+    },
+    {
+      "path_length": 82,
+      "computation_time": 0.039328813552856445,
+      "success_rate": 1.0,
+      "nodes_expanded": 6875,
+      "nodes_visited": 6973
+    },
+    {
+      "path_length": 7,
+      "computation_time": 0.0003185272216796875,
+      "success_rate": 1.0,
+      "nodes_expanded": 70,
+      "nodes_visited": 95
+    },
+    {
+      "path_length": 80,
+      "computation_time": 0.04135775566101074,
+      "success_rate": 1.0,
+      "nodes_expanded": 5478,
+      "nodes_visited": 5577
+    },
+    {
+      "path_length": 74,
+      "computation_time": 0.036064863204956055,
+      "success_rate": 1.0,
+      "nodes_expanded": 5550,
+      "nodes_visited": 5662
+    },
+    {
+      "path_length": 33,
+      "computation_time": 0.005666255950927734,
+      "success_rate": 1.0,
+      "nodes_expanded": 1268,
+      "nodes_visited": 1342
+    },
+    {
+      "path_length": 35,
+      "computation_time": 0.009651660919189453,
+      "success_rate": 1.0,
+      "nodes_expanded": 1818,
+      "nodes_visited": 1904
+    },
+    {
+      "path_length": 138,
+      "computation_time": 0.06497716903686523,
+      "success_rate": 1.0,
+      "nodes_expanded": 9802,
+      "nodes_visited": 9816
+    },
+    {
+      "path_length": 69,
+      "computation_time": 0.03550577163696289,
+      "success_rate": 1.0,
+      "nodes_expanded": 6372,
+      "nodes_visited": 6500
+    },
+    {
+      "path_length": 134,
+      "computation_time": 0.0523524284362793,
+      "success_rate": 1.0,
+      "nodes_expanded": 9623,
+      "nodes_visited": 9645
+    },
+    {
+      "path_length": 85,
+      "computation_time": 0.02366161346435547,
+      "success_rate": 1.0,
+      "nodes_expanded": 4710,
+      "nodes_visited": 4809
+    },
+    {
+      "path_length": 107,
+      "computation_time": 0.05584287643432617,
+      "success_rate": 1.0,
+      "nodes_expanded": 8831,
+      "nodes_visited": 8893
+    },
+    {
+      "path_length": 93,
+      "computation_time": 0.0369420051574707,
+      "success_rate": 1.0,
+      "nodes_expanded": 7060,
+      "nodes_visited": 7150
+    },
+    {
+      "path_length": 105,
+      "computation_time": 0.0435943603515625,
+      "success_rate": 1.0,
+      "nodes_expanded": 7319,
+      "nodes_visited": 7406
+    },
+    {
+      "path_length": 54,
+      "computation_time": 0.019272327423095703,
+      "success_rate": 1.0,
+      "nodes_expanded": 3918,
+      "nodes_visited": 4032
+    },
+    {
+      "path_length": 17,
+      "computation_time": 0.0023322105407714844,
+      "success_rate": 1.0,
+      "nodes_expanded": 529,
+      "nodes_visited": 596
+    },
+    {
+      "path_length": 105,
+      "computation_time": 0.06092405319213867,
+      "success_rate": 1.0,
+      "nodes_expanded": 7911,
+      "nodes_visited": 7984
+    },
+    {
+      "path_length": 144,
+      "computation_time": 0.04913043975830078,
+      "success_rate": 1.0,
+      "nodes_expanded": 8642,
+      "nodes_visited": 8691
+    },
+    {
+      "path_length": 68,
+      "computation_time": 0.02752971649169922,
+      "success_rate": 1.0,
+      "nodes_expanded": 3475,
+      "nodes_visited": 3561
+    },
+    {
+      "path_length": 96,
+      "computation_time": 0.0585629940032959,
+      "success_rate": 1.0,
+      "nodes_expanded": 6930,
+      "nodes_visited": 7029
+    },
+    {
+      "path_length": 44,
+      "computation_time": 0.02617478370666504,
+      "success_rate": 1.0,
+      "nodes_expanded": 3086,
+      "nodes_visited": 3191
+    },
+    {
+      "path_length": 46,
+      "computation_time": 0.0168149471282959,
+      "success_rate": 1.0,
+      "nodes_expanded": 2390,
+      "nodes_visited": 2472
+    },
+    {
+      "path_length": 10,
+      "computation_time": 0.0007631778717041016,
+      "success_rate": 1.0,
+      "nodes_expanded": 173,
+      "nodes_visited": 212
+    },
+    {
+      "path_length": 93,
+      "computation_time": 0.03625369071960449,
+      "success_rate": 1.0,
+      "nodes_expanded": 6282,
+      "nodes_visited": 6380
+    },
+    {
+      "path_length": 84,
+      "computation_time": 0.04217958450317383,
+      "success_rate": 1.0,
+      "nodes_expanded": 5811,
+      "nodes_visited": 5909
+    },
+    {
+      "path_length": 64,
+      "computation_time": 0.020335674285888672,
+      "success_rate": 1.0,
+      "nodes_expanded": 3372,
+      "nodes_visited": 3458
+    }
+  ]
+}
