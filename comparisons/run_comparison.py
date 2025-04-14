@@ -58,14 +58,14 @@ def run_algorithm(algorithm: str, env: GridWorld, config: Any) -> Dict[str, Any]
     
     return metrics
 
-def run_comparison(algorithms: List[str], config_name: str, num_runs: int = 10,
+def run_comparison(algorithms: List[str], config_names: List[str], num_runs: int = 10,
                   output_dir: str = 'comparison_results') -> None:
-    """Run comparison of multiple algorithms
+    """Run comparison of multiple algorithms across different environments
     
     Args:
         algorithms: List of algorithm names to compare
-        config_name: Name of configuration to use
-        num_runs: Number of runs per algorithm
+        config_names: List of configuration names to test
+        num_runs: Number of runs per algorithm per environment
         output_dir: Directory to save results
     """
     # Initialize metrics collector
@@ -75,28 +75,32 @@ def run_comparison(algorithms: List[str], config_name: str, num_runs: int = 10,
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    # Get configuration class and create an instance
-    config_class = CONFIGS[config_name]
-    config = config_class()
-    
-    # Run each algorithm multiple times
-    for algorithm in algorithms:
-        print(f"\nRunning {algorithm}...")
-        for run in range(num_runs):
-            # Create environment
-            env = GridWorld(config)
-            
-            # Run algorithm
-            run_metrics = run_algorithm(algorithm, env, config)
-            
-            # Add metrics
-            metrics.add_run(algorithm, run_metrics)
-            
-            print(f"Run {run + 1}/{num_runs}: "
-                  f"Path length = {run_metrics['path_length']}, "
-                  f"Time = {run_metrics['computation_time']:.3f}s, "
-                  f"Success = {run_metrics['success_rate']}")
-            
+    # Run each algorithm in each environment multiple times
+    for config_name in config_names:
+        print(f"\nTesting environment: {config_name}")
+        
+        # Get configuration class and create an instance
+        config_class = CONFIGS[config_name]
+        config = config_class()
+        
+        for algorithm in algorithms:
+            print(f"\nRunning {algorithm}...")
+            for run in range(num_runs):
+                # Create environment
+                env = GridWorld(config)
+                
+                # Run algorithm
+                run_metrics = run_algorithm(algorithm, env, config)
+                
+                # Add metrics with environment info
+                run_metrics['environment'] = config_name
+                metrics.add_run(algorithm, run_metrics)
+                
+                print(f"Run {run + 1}/{num_runs}: "
+                      f"Path length = {run_metrics['path_length']}, "
+                      f"Time = {run_metrics['computation_time']:.3f}s, "
+                      f"Success = {run_metrics['success_rate']}")
+                
     # Generate visualizations
     visualizer = ComparisonVisualizer(metrics)
     visualizer.plot_all_comparisons(output_dir)
@@ -111,16 +115,17 @@ def main():
     parser.add_argument('--algorithms', type=str, nargs='+',
                       default=['astar', 'dijkstra'],
                       help='Algorithms to compare')
-    parser.add_argument('--config', type=str, default='default',
-                      help='Configuration to use (default, dense, or sparse)')
+    parser.add_argument('--configs', type=str, nargs='+',
+                      default=['default', 'dense', 'sparse'],
+                      help='Configurations to test')
     parser.add_argument('--num-runs', type=int, default=50,
-                      help='Number of runs per algorithm')
+                      help='Number of runs per algorithm per environment')
     parser.add_argument('--output-dir', type=str, default='comparison_results',
                       help='Directory to save results')
     
     args = parser.parse_args()
     
-    run_comparison(args.algorithms, args.config, args.num_runs, args.output_dir)
+    run_comparison(args.algorithms, args.configs, args.num_runs, args.output_dir)
 
 if __name__ == '__main__':
     main() 
