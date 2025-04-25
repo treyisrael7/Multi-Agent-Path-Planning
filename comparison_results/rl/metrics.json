@@ -4,18 +4,18 @@
       {
         "environment": "multi_agent_grid",
         "steps": 1000.0,
-        "goals_collected": 19.68,
-        "obstacles_hit": 16.64,
-        "total_reward": 341.97589200000004
+        "goals_collected": 40.38,
+        "obstacles_hit": 17.14,
+        "total_reward": 547.3007920000005
       }
     ],
     "a2c": [
       {
         "environment": "multi_agent_grid",
         "steps": 1000.0,
-        "goals_collected": 19.22,
-        "obstacles_hit": 17.8,
-        "total_reward": 321.4492600000003
+        "goals_collected": 37.72,
+        "obstacles_hit": 15.06,
+        "total_reward": 462.3209800000007
       }
     ]
   },

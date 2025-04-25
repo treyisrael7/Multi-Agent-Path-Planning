@@ -58,7 +58,7 @@ The environment supports both classical search and reinforcement learning approa
 ### Grid World Environment
 - Configurable grid size (default: 50x50)
 - Multiple agents (default: 3)
-- Configurable goals and obstacles
+- Configurable goals (default: 100) and obstacles (default: 15)
 - Support for different goal distribution patterns
 - Customizable movement patterns
 

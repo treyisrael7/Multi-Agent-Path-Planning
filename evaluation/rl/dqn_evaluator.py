@@ -5,6 +5,8 @@ import numpy as np
 from typing import Dict, List, Tuple, Optional
 import argparse
 import os
+import time
+import pygame
 
 from algorithms.rl.environment.pathfinding_env import PathfindingEnv
 from algorithms.rl.agents.dqn import DQNAgent
@@ -17,7 +19,7 @@ class DQNEvaluator(BaseEvaluator):
                  model_path: Optional[str] = None,
                  grid_size: int = 50,
                  num_agents: int = 3,
-                 num_goals: int = 50,
+                 num_goals: int = 100,
                  num_obstacles: int = 15,
                  max_steps: int = 1000,
                  visualize: bool = True):
@@ -147,6 +149,47 @@ class DQNEvaluator(BaseEvaluator):
             if self.visualize:
                 self._update_metrics(steps, goals_collected, obstacles_hit, total_reward)
                 self._draw_environment(state)
+                
+                # Handle events and timing
+                self.clock.tick(self.target_fps * self.speed)
+                
+                # Check for events
+                result = self._handle_events()
+                if result is False:  # Quit signal
+                    return {
+                        'steps': steps,
+                        'goals_collected': goals_collected,
+                        'obstacles_hit': obstacles_hit,
+                        'total_reward': total_reward
+                    }
+                elif result is True:  # Reset signal
+                    # Reset environment and start new episode
+                    state = self.env.reset()
+                    steps = 0
+                    goals_collected = 0
+                    obstacles_hit = 0
+                    total_reward = 0.0
+                    continue
+                
+                # Handle pause
+                while self.paused and self.running:
+                    result = self._handle_events()
+                    if result is False:  # Quit signal
+                        return {
+                            'steps': steps,
+                            'goals_collected': goals_collected,
+                            'obstacles_hit': obstacles_hit,
+                            'total_reward': total_reward
+                        }
+                    elif result is True:  # Reset signal
+                        # Reset environment and start new episode
+                        state = self.env.reset()
+                        steps = 0
+                        goals_collected = 0
+                        obstacles_hit = 0
+                        total_reward = 0.0
+                        continue
+                    self.clock.tick(self.target_fps * self.speed)
                 
             # Update state for next iteration
             state = next_state
