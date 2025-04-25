@@ -133,31 +133,63 @@ The environment supports both classical search and reinforcement learning approa
 
 ## Usage
 
+### Running Evaluations
+
+All scripts should be run as Python modules from the project root directory:
+
+```bash
+# Search Algorithm Evaluations
+python -m evaluation.search.run_comparison      # Compare A* and Dijkstra
+python -m evaluation.search.run_search_visualization  # Visualize search process
+
+# Reinforcement Learning Evaluations
+python -m evaluation.rl.evaluate_dqn           # Evaluate DQN agent
+python -m evaluation.rl.evaluate_a2c           # Evaluate A2C agent
+python -m evaluation.rl.compare                # Compare RL algorithms
+
+# Direct Evaluator Access (for custom evaluation scenarios)
+python -m evaluation.rl.dqn_evaluator          # Run DQN evaluator
+python -m evaluation.rl.a2c_evaluator          # Run A2C evaluator
+```
+
+Note: Do not run the Python files directly (e.g., `python path/to/script.py`), as this will cause import errors. Always use the module notation with dots instead of slashes.
+
+### Configuration
+
 1. Configure environment and evaluation parameters:
-   ```bash
-   # Edit evaluation/rl/config.json for RL settings
-   # Edit algorithms/search/configurations.py for search settings
-   ```
+   - Edit `evaluation/rl/config.json` for RL settings
+   - Edit `algorithms/search/configurations.py` for search settings
 
-2. Run evaluations:
-   ```bash
-   # RL evaluations
-   python evaluation/rl/evaluate_dqn.py
-   python evaluation/rl/evaluate_a2c.py
-   
-   # Search evaluations
-   python evaluation/search/run_comparison.py
-   ```
+### Visualization Tools
 
-3. Compare results:
-   ```bash
-   python evaluation/rl/compare.py
-   ```
+The repository includes several visualization options:
 
-4. Visualize results:
-   ```bash
-   python evaluation/rl/visualizer.py
-   ```
+```bash
+# Search Algorithm Visualizations
+python -m evaluation.search.run_search_visualization  # Watch search algorithms in action
+python -m evaluation.search.visualize_comparisons    # View search algorithm comparisons
+
+# RL Visualizations
+python -m evaluation.rl.visualizer                   # View RL training results
+python -m utils.visualizer                           # General environment visualization
+
+# Real-time Environment Rendering
+python -m utils.renderer                            # Watch agents in real-time
+```
+
+Each visualization tool offers different insights:
+- `run_search_visualization`: Watch A* and Dijkstra's algorithms explore the grid
+- `visualize_comparisons`: Compare path lengths, computation times, and success rates
+- `visualizer`: View RL metrics like rewards, steps-to-goal, and learning curves
+- `renderer`: Real-time visualization of agent behavior
+
+### Results
+
+Results and visualizations are saved in:
+- `comparison_results/search/` - Search algorithm comparisons
+- `comparison_results/rl/` - RL algorithm performance
+- `comparison_results/sparse/` - Results with sparse goal distribution
+- `comparison_results/dense/` - Results with dense goal distribution
 
 ## Requirements
 

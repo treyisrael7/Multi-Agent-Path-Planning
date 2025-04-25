@@ -1,17 +1,21 @@
 """Script to run algorithm comparisons"""
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import argparse
 from pathlib import Path
 from typing import List, Dict, Any
 import json
 import time
 import numpy as np
-from algorithms.pathfinding.astar import astar_path
-from algorithms.pathfinding.dijkstra import dijkstra_path
-from env.grid_world import GridWorld
-from env.configurations import CONFIGS
-from .metrics import MetricsCollector
-from .visualizer import ComparisonVisualizer
+from algorithms.search.astar import astar_path
+from algorithms.search.dijkstra import dijkstra_path
+from algorithms.search.grid_world import GridWorld
+from algorithms.search.configurations import CONFIGS
+from evaluation.search.metrics import MetricsCollector
+from evaluation.search.visualizer import ComparisonVisualizer
 
 def run_algorithm(algorithm: str, env: GridWorld, config: Any) -> Dict[str, Any]:
     """Run a single algorithm and collect metrics
