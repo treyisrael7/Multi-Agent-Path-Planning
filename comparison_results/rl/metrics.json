@@ -1,0 +1,25 @@
+{
+  "runs": {
+    "dqn": [
+      {
+        "environment": "multi_agent_grid",
+        "steps": 1000.0,
+        "goals_collected": 19.68,
+        "obstacles_hit": 16.64,
+        "total_reward": 341.97589200000004
+      }
+    ],
+    "a2c": [
+      {
+        "environment": "multi_agent_grid",
+        "steps": 1000.0,
+        "goals_collected": 19.22,
+        "obstacles_hit": 17.8,
+        "total_reward": 321.4492600000003
+      }
+    ]
+  },
+  "environments": [
+    "multi_agent_grid"
+  ]
+}

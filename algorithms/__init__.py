@@ -1,5 +1,5 @@
-"""Algorithms package for path planning"""
+"""Algorithms package"""
 
-from algorithms.pathfinding import astar_path, dijkstra_path, manhattan_distance
+from algorithms.search import astar_path, dijkstra_path, manhattan_distance
 
 __all__ = ['astar_path', 'dijkstra_path', 'manhattan_distance'] 

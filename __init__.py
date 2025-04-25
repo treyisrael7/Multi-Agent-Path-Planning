@@ -1,1 +1,1 @@
-"""Root package for path planning simulation""" 
+"""Path planning project package""" 

@@ -1,0 +1,181 @@
+"""A2C evaluator implementation"""
+
+import torch
+import numpy as np
+from typing import Dict, List, Tuple
+import argparse
+import os
+
+from algorithms.rl.environment.pathfinding_env import PathfindingEnv
+from algorithms.rl.agents.a2c import A2CAgent
+from evaluation.rl.base_evaluator import BaseEvaluator
+
+class A2CEvaluator(BaseEvaluator):
+    """Evaluator for A2C agent"""
+    
+    def __init__(self,
+                 model_path: str = None,
+                 grid_size: int = 50,
+                 num_agents: int = 3,
+                 num_goals: int = 50,
+                 num_obstacles: int = 15,
+                 max_steps: int = 1000,
+                 visualize: bool = True):
+        """Initialize A2C evaluator
+        
+        Args:
+            model_path: Path to the trained model checkpoint
+            grid_size: Size of the grid environment
+            num_agents: Number of agents in the environment
+            num_goals: Number of goals to collect
+            num_obstacles: Number of obstacles in the environment
+            max_steps: Maximum steps per episode
+            visualize: Whether to show visualization
+        """
+        # Set default model path if not provided
+        if model_path is None:
+            model_path = os.path.join('models', 'a2c', 'a2c_model.pth')
+            
+        # Set device
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        print(f"Using device: {self.device}")
+            
+        super().__init__(
+            model_path=model_path,
+            grid_size=grid_size,
+            num_agents=num_agents,
+            num_goals=num_goals,
+            num_obstacles=num_obstacles,
+            max_steps=max_steps,
+            visualize=visualize
+        )
+        
+        # Initialize environment
+        self.env = PathfindingEnv(
+            grid_size=grid_size,
+            num_agents=num_agents,
+            num_goals=num_goals,
+            num_obstacles=num_obstacles,
+            max_steps=max_steps
+        )
+        
+        # Initialize agent with correct state shape
+        # The environment returns state in [H, W, C] format
+        # The A2C network expects [C, H, W] format
+        state_shape = (3, grid_size, grid_size)  # (channels, height, width)
+        action_size = self.env.action_space.nvec[0]  # Get action size for one agent
+        self.agent = A2CAgent(
+            state_shape=state_shape,
+            action_size=action_size,
+            num_agents=num_agents
+        )
+        
+        # Load model
+        self._load_model()
+        
+    def _load_model(self) -> None:
+        """Load the trained model from checkpoint"""
+        try:
+            checkpoint = torch.load(self.model_path, map_location=self.device)
+            
+            # Print model information
+            print("\nLoading model from checkpoint:")
+            print(f"State shape: {self.agent.state_shape}")
+            print(f"Action size: {self.agent.action_size}")
+            print(f"Number of agents: {self.agent.num_agents}")
+            
+            # Load each actor-critic network and set to evaluation mode
+            for i in range(self.num_agents):
+                self.agent.actor_critics[i].load_state_dict(checkpoint['actor_critics'][i])
+                self.agent.actor_critics[i].eval()
+                
+            print(f"Successfully loaded model from {self.model_path}")
+        except Exception as e:
+            print(f"Error loading model: {e}")
+            raise
+            
+    def _preprocess_state(self, state: np.ndarray) -> np.ndarray:
+        """Convert state to correct format for A2C agent
+        
+        Args:
+            state: State array from environment [H, W, C] format
+            
+        Returns:
+            Processed state array in [C, H, W] format
+        """
+        # Convert from [H, W, C] to [C, H, W] format
+        if state.shape[-1] == 3:  # If last dimension is channels
+            state = np.transpose(state, (2, 0, 1))
+            
+        # Ensure state is float32
+        if state.dtype != np.float32:
+            state = state.astype(np.float32)
+            
+        return state
+            
+    def evaluate_episode(self) -> Dict[str, float]:
+        """Evaluate a single episode
+        
+        Returns:
+            Dictionary of episode metrics
+        """
+        state = self.env.reset()
+        done = False
+        steps = 0
+        goals_collected = 0
+        obstacles_hit = 0
+        total_reward = 0.0
+        
+        while not done and steps < self.max_steps:
+            # Select actions using policy network
+            with torch.no_grad():
+                actions = self.agent.select_action(state)
+            
+            # Take step in environment
+            next_state, rewards, done, info = self.env.step(actions)
+            
+            # Update metrics
+            steps += 1
+            goals_collected = info['goals_collected']
+            obstacles_hit = info['obstacles_hit']
+            total_reward += sum(rewards)
+            
+            # Update visualization
+            if self.visualize:
+                self._update_metrics(steps, goals_collected, obstacles_hit, total_reward)
+                self._draw_environment(state)
+                
+            # Update state for next iteration
+            state = next_state
+            
+        # Print episode summary
+        print(f"\nEpisode complete - Steps: {steps}, Goals: {goals_collected}, Obstacles: {obstacles_hit}, Reward: {total_reward:.2f}")
+            
+        return {
+            'steps': steps,
+            'goals_collected': goals_collected,
+            'obstacles_hit': obstacles_hit,
+            'total_reward': total_reward
+        }
+        
+def main():
+    """Main function to run A2C evaluation"""
+    parser = argparse.ArgumentParser(description='Evaluate A2C agent')
+    parser.add_argument('--model_path', type=str,
+                      help='Path to the trained model checkpoint (default: models/a2c/a2c_model.pth)')
+    parser.add_argument('--no-vis', action='store_true',
+                      help='Disable visualization')
+    parser.add_argument('--episodes', type=int, default=10,
+                      help='Number of episodes to evaluate (default: 10)')
+    
+    args = parser.parse_args()
+    
+    evaluator = A2CEvaluator(
+        model_path=args.model_path,
+        visualize=not args.no_vis
+    )
+    
+    evaluator.evaluate(num_episodes=args.episodes)
+    
+if __name__ == '__main__':
+    main() 

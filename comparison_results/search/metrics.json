@@ -1,0 +1,2012 @@
+{
+  "runs": {
+    "astar": [
+      {
+        "path_length": 59,
+        "computation_time": 0.001550912857055664,
+        "success_rate": 1.0,
+        "nodes_expanded": 445,
+        "nodes_visited": 559,
+        "goals_collected": 2,
+        "coverage_percentage": 0.597165991902834,
+        "environment": "dense"
+      },
+      {
+        "path_length": 67,
+        "computation_time": 0.0002815723419189453,
+        "success_rate": 1.0,
+        "nodes_expanded": 67,
+        "nodes_visited": 197,
+        "goals_collected": 3,
+        "coverage_percentage": 0.6781376518218624,
+        "environment": "dense"
+      },
+      {
+        "path_length": 60,
+        "computation_time": 0.004185914993286133,
+        "success_rate": 1.0,
+        "nodes_expanded": 889,
+        "nodes_visited": 1006,
+        "goals_collected": 3,
+        "coverage_percentage": 0.6072874493927125,
+        "environment": "dense"
+      },
+      {
+        "path_length": 64,
+        "computation_time": 0.004302263259887695,
+        "success_rate": 1.0,
+        "nodes_expanded": 962,
+        "nodes_visited": 1059,
+        "goals_collected": 6,
+        "coverage_percentage": 0.6477732793522267,
+        "environment": "dense"
+      },
+      {
+        "path_length": 27,
+        "computation_time": 0.00011897087097167969,
+        "success_rate": 1.0,
+        "nodes_expanded": 27,
+        "nodes_visited": 79,
+        "goals_collected": 1,
+        "coverage_percentage": 0.2732793522267206,
+        "environment": "dense"
+      },
+      {
+        "path_length": 32,
+        "computation_time": 0.0001361370086669922,
+        "success_rate": 1.0,
+        "nodes_expanded": 32,
+        "nodes_visited": 94,
+        "goals_collected": 1,
+        "coverage_percentage": 0.32388663967611336,
+        "environment": "dense"
+      },
+      {
+        "path_length": 90,
+        "computation_time": 0.008248567581176758,
+        "success_rate": 1.0,
+        "nodes_expanded": 1969,
+        "nodes_visited": 2148,
+        "goals_collected": 3,
+        "coverage_percentage": 0.9109311740890688,
+        "environment": "dense"
+      },
+      {
+        "path_length": 27,
+        "computation_time": 0.0005385875701904297,
+        "success_rate": 1.0,
+        "nodes_expanded": 163,
+        "nodes_visited": 216,
+        "goals_collected": 2,
+        "coverage_percentage": 0.2732793522267206,
+        "environment": "dense"
+      },
+      {
+        "path_length": 30,
+        "computation_time": 0.0009140968322753906,
+        "success_rate": 1.0,
+        "nodes_expanded": 194,
+        "nodes_visited": 254,
+        "goals_collected": 3,
+        "coverage_percentage": 0.30364372469635625,
+        "environment": "dense"
+      },
+      {
+        "path_length": 34,
+        "computation_time": 0.00018596649169921875,
+        "success_rate": 1.0,
+        "nodes_expanded": 34,
+        "nodes_visited": 98,
+        "goals_collected": 2,
+        "coverage_percentage": 0.3441295546558705,
+        "environment": "dense"
+      },
+      {
+        "path_length": 77,
+        "computation_time": 0.0008900165557861328,
+        "success_rate": 1.0,
+        "nodes_expanded": 250,
+        "nodes_visited": 397,
+        "goals_collected": 1,
+        "coverage_percentage": 0.7793522267206479,
+        "environment": "dense"
+      },
+      {
+        "path_length": 102,
+        "computation_time": 0.0004334449768066406,
+        "success_rate": 1.0,
+        "nodes_expanded": 102,
+        "nodes_visited": 304,
+        "goals_collected": 1,
+        "coverage_percentage": 1.0323886639676114,
+        "environment": "dense"
+      },
+      {
+        "path_length": 102,
+        "computation_time": 0.00043582916259765625,
+        "success_rate": 1.0,
+        "nodes_expanded": 102,
+        "nodes_visited": 296,
+        "goals_collected": 2,
+        "coverage_percentage": 1.0323886639676114,
+        "environment": "dense"
+      },
+      {
+        "path_length": 49,
+        "computation_time": 0.00037789344787597656,
+        "success_rate": 1.0,
+        "nodes_expanded": 49,
+        "nodes_visited": 143,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4959514170040486,
+        "environment": "dense"
+      },
+      {
+        "path_length": 113,
+        "computation_time": 0.007123231887817383,
+        "success_rate": 1.0,
+        "nodes_expanded": 1980,
+        "nodes_visited": 2179,
+        "goals_collected": 5,
+        "coverage_percentage": 1.1437246963562753,
+        "environment": "dense"
+      },
+      {
+        "path_length": 32,
+        "computation_time": 0.00013136863708496094,
+        "success_rate": 1.0,
+        "nodes_expanded": 32,
+        "nodes_visited": 91,
+        "goals_collected": 3,
+        "coverage_percentage": 0.32388663967611336,
+        "environment": "dense"
+      },
+      {
+        "path_length": 77,
+        "computation_time": 0.00539708137512207,
+        "success_rate": 1.0,
+        "nodes_expanded": 1361,
+        "nodes_visited": 1514,
+        "goals_collected": 2,
+        "coverage_percentage": 0.7793522267206479,
+        "environment": "dense"
+      },
+      {
+        "path_length": 39,
+        "computation_time": 0.0001773834228515625,
+        "success_rate": 1.0,
+        "nodes_expanded": 39,
+        "nodes_visited": 115,
+        "goals_collected": 2,
+        "coverage_percentage": 0.39473684210526316,
+        "environment": "dense"
+      },
+      {
+        "path_length": 46,
+        "computation_time": 0.0013434886932373047,
+        "success_rate": 1.0,
+        "nodes_expanded": 396,
+        "nodes_visited": 488,
+        "goals_collected": 2,
+        "coverage_percentage": 0.465587044534413,
+        "environment": "dense"
+      },
+      {
+        "path_length": 82,
+        "computation_time": 0.0035943984985351562,
+        "success_rate": 1.0,
+        "nodes_expanded": 1064,
+        "nodes_visited": 1222,
+        "goals_collected": 5,
+        "coverage_percentage": 0.8299595141700404,
+        "environment": "dense"
+      },
+      {
+        "path_length": 89,
+        "computation_time": 0.005217075347900391,
+        "success_rate": 1.0,
+        "nodes_expanded": 1568,
+        "nodes_visited": 1742,
+        "goals_collected": 7,
+        "coverage_percentage": 0.9008097165991902,
+        "environment": "dense"
+      },
+      {
+        "path_length": 48,
+        "computation_time": 0.0018391609191894531,
+        "success_rate": 1.0,
+        "nodes_expanded": 561,
+        "nodes_visited": 656,
+        "goals_collected": 4,
+        "coverage_percentage": 0.4858299595141701,
+        "environment": "dense"
+      },
+      {
+        "path_length": 80,
+        "computation_time": 0.0003457069396972656,
+        "success_rate": 1.0,
+        "nodes_expanded": 80,
+        "nodes_visited": 238,
+        "goals_collected": 1,
+        "coverage_percentage": 0.8097165991902834,
+        "environment": "dense"
+      },
+      {
+        "path_length": 42,
+        "computation_time": 0.00030875205993652344,
+        "success_rate": 1.0,
+        "nodes_expanded": 42,
+        "nodes_visited": 124,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4251012145748988,
+        "environment": "dense"
+      },
+      {
+        "path_length": 87,
+        "computation_time": 0.004942178726196289,
+        "success_rate": 1.0,
+        "nodes_expanded": 1420,
+        "nodes_visited": 1594,
+        "goals_collected": 2,
+        "coverage_percentage": 0.8805668016194331,
+        "environment": "dense"
+      },
+      {
+        "path_length": 61,
+        "computation_time": 0.0030677318572998047,
+        "success_rate": 1.0,
+        "nodes_expanded": 931,
+        "nodes_visited": 1050,
+        "goals_collected": 2,
+        "coverage_percentage": 0.6174089068825911,
+        "environment": "dense"
+      },
+      {
+        "path_length": 37,
+        "computation_time": 0.0008406639099121094,
+        "success_rate": 1.0,
+        "nodes_expanded": 69,
+        "nodes_visited": 136,
+        "goals_collected": 1,
+        "coverage_percentage": 0.37449392712550605,
+        "environment": "dense"
+      },
+      {
+        "path_length": 73,
+        "computation_time": 0.0007462501525878906,
+        "success_rate": 1.0,
+        "nodes_expanded": 213,
+        "nodes_visited": 357,
+        "goals_collected": 4,
+        "coverage_percentage": 0.7388663967611336,
+        "environment": "dense"
+      },
+      {
+        "path_length": 60,
+        "computation_time": 0.0006303787231445312,
+        "success_rate": 1.0,
+        "nodes_expanded": 178,
+        "nodes_visited": 291,
+        "goals_collected": 3,
+        "coverage_percentage": 0.6072874493927125,
+        "environment": "dense"
+      },
+      {
+        "path_length": 43,
+        "computation_time": 0.0003077983856201172,
+        "success_rate": 1.0,
+        "nodes_expanded": 84,
+        "nodes_visited": 170,
+        "goals_collected": 2,
+        "coverage_percentage": 0.4352226720647773,
+        "environment": "dense"
+      },
+      {
+        "path_length": 57,
+        "computation_time": 0.00238800048828125,
+        "success_rate": 1.0,
+        "nodes_expanded": 713,
+        "nodes_visited": 822,
+        "goals_collected": 1,
+        "coverage_percentage": 0.576923076923077,
+        "environment": "dense"
+      },
+      {
+        "path_length": 29,
+        "computation_time": 0.0007288455963134766,
+        "success_rate": 1.0,
+        "nodes_expanded": 213,
+        "nodes_visited": 269,
+        "goals_collected": 1,
+        "coverage_percentage": 0.2935222672064777,
+        "environment": "dense"
+      },
+      {
+        "path_length": 72,
+        "computation_time": 0.0031638145446777344,
+        "success_rate": 1.0,
+        "nodes_expanded": 932,
+        "nodes_visited": 1075,
+        "goals_collected": 2,
+        "coverage_percentage": 0.728744939271255,
+        "environment": "dense"
+      },
+      {
+        "path_length": 110,
+        "computation_time": 0.01009988784790039,
+        "success_rate": 1.0,
+        "nodes_expanded": 2914,
+        "nodes_visited": 3133,
+        "goals_collected": 2,
+        "coverage_percentage": 1.1133603238866396,
+        "environment": "dense"
+      },
+      {
+        "path_length": 93,
+        "computation_time": 0.0004863739013671875,
+        "success_rate": 1.0,
+        "nodes_expanded": 117,
+        "nodes_visited": 296,
+        "goals_collected": 3,
+        "coverage_percentage": 0.9412955465587045,
+        "environment": "dense"
+      },
+      {
+        "path_length": 62,
+        "computation_time": 0.002889394760131836,
+        "success_rate": 1.0,
+        "nodes_expanded": 875,
+        "nodes_visited": 996,
+        "goals_collected": 4,
+        "coverage_percentage": 0.6275303643724697,
+        "environment": "dense"
+      },
+      {
+        "path_length": 36,
+        "computation_time": 0.0007951259613037109,
+        "success_rate": 1.0,
+        "nodes_expanded": 233,
+        "nodes_visited": 301,
+        "goals_collected": 2,
+        "coverage_percentage": 0.3643724696356275,
+        "environment": "dense"
+      },
+      {
+        "path_length": 26,
+        "computation_time": 0.00010395050048828125,
+        "success_rate": 1.0,
+        "nodes_expanded": 26,
+        "nodes_visited": 76,
+        "goals_collected": 1,
+        "coverage_percentage": 0.2631578947368421,
+        "environment": "dense"
+      },
+      {
+        "path_length": 25,
+        "computation_time": 0.0004038810729980469,
+        "success_rate": 1.0,
+        "nodes_expanded": 123,
+        "nodes_visited": 168,
+        "goals_collected": 4,
+        "coverage_percentage": 0.25303643724696356,
+        "environment": "dense"
+      },
+      {
+        "path_length": 62,
+        "computation_time": 0.0032172203063964844,
+        "success_rate": 1.0,
+        "nodes_expanded": 984,
+        "nodes_visited": 1106,
+        "goals_collected": 3,
+        "coverage_percentage": 0.6275303643724697,
+        "environment": "dense"
+      },
+      {
+        "path_length": 85,
+        "computation_time": 0.00047516822814941406,
+        "success_rate": 1.0,
+        "nodes_expanded": 97,
+        "nodes_visited": 257,
+        "goals_collected": 3,
+        "coverage_percentage": 0.8603238866396761,
+        "environment": "dense"
+      },
+      {
+        "path_length": 91,
+        "computation_time": 0.0004630088806152344,
+        "success_rate": 1.0,
+        "nodes_expanded": 91,
+        "nodes_visited": 267,
+        "goals_collected": 5,
+        "coverage_percentage": 0.9210526315789472,
+        "environment": "dense"
+      },
+      {
+        "path_length": 34,
+        "computation_time": 0.0010101795196533203,
+        "success_rate": 1.0,
+        "nodes_expanded": 306,
+        "nodes_visited": 374,
+        "goals_collected": 1,
+        "coverage_percentage": 0.3441295546558705,
+        "environment": "dense"
+      },
+      {
+        "path_length": 105,
+        "computation_time": 0.00038623809814453125,
+        "success_rate": 1.0,
+        "nodes_expanded": 105,
+        "nodes_visited": 253,
+        "goals_collected": 3,
+        "coverage_percentage": 1.0627530364372468,
+        "environment": "dense"
+      },
+      {
+        "path_length": 24,
+        "computation_time": 0.00010228157043457031,
+        "success_rate": 1.0,
+        "nodes_expanded": 24,
+        "nodes_visited": 66,
+        "goals_collected": 1,
+        "coverage_percentage": 0.24291497975708504,
+        "environment": "dense"
+      },
+      {
+        "path_length": 97,
+        "computation_time": 0.006636381149291992,
+        "success_rate": 1.0,
+        "nodes_expanded": 1633,
+        "nodes_visited": 1819,
+        "goals_collected": 4,
+        "coverage_percentage": 0.9817813765182186,
+        "environment": "dense"
+      },
+      {
+        "path_length": 49,
+        "computation_time": 0.00022220611572265625,
+        "success_rate": 1.0,
+        "nodes_expanded": 55,
+        "nodes_visited": 148,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4959514170040486,
+        "environment": "dense"
+      },
+      {
+        "path_length": 100,
+        "computation_time": 0.0004260540008544922,
+        "success_rate": 1.0,
+        "nodes_expanded": 100,
+        "nodes_visited": 281,
+        "goals_collected": 2,
+        "coverage_percentage": 1.0121457489878543,
+        "environment": "dense"
+      },
+      {
+        "path_length": 117,
+        "computation_time": 0.0005869865417480469,
+        "success_rate": 1.0,
+        "nodes_expanded": 141,
+        "nodes_visited": 366,
+        "goals_collected": 2,
+        "coverage_percentage": 1.1842105263157896,
+        "environment": "dense"
+      },
+      {
+        "path_length": 102,
+        "computation_time": 0.00042366981506347656,
+        "success_rate": 1.0,
+        "nodes_expanded": 102,
+        "nodes_visited": 302,
+        "goals_collected": 3,
+        "coverage_percentage": 1.0323886639676114,
+        "environment": "dense"
+      },
+      {
+        "path_length": 77,
+        "computation_time": 0.004120588302612305,
+        "success_rate": 1.0,
+        "nodes_expanded": 1167,
+        "nodes_visited": 1318,
+        "goals_collected": 4,
+        "coverage_percentage": 0.7793522267206479,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 66,
+        "computation_time": 0.0002913475036621094,
+        "success_rate": 1.0,
+        "nodes_expanded": 66,
+        "nodes_visited": 196,
+        "goals_collected": 2,
+        "coverage_percentage": 0.6680161943319839,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 126,
+        "computation_time": 0.0005109310150146484,
+        "success_rate": 1.0,
+        "nodes_expanded": 126,
+        "nodes_visited": 332,
+        "goals_collected": 6,
+        "coverage_percentage": 1.2753036437246963,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 53,
+        "computation_time": 0.0002319812774658203,
+        "success_rate": 1.0,
+        "nodes_expanded": 53,
+        "nodes_visited": 157,
+        "goals_collected": 1,
+        "coverage_percentage": 0.5364372469635628,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 14,
+        "computation_time": 5.602836608886719e-05,
+        "success_rate": 1.0,
+        "nodes_expanded": 14,
+        "nodes_visited": 41,
+        "goals_collected": 1,
+        "coverage_percentage": 0.1417004048582996,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 67,
+        "computation_time": 0.003725290298461914,
+        "success_rate": 1.0,
+        "nodes_expanded": 1084,
+        "nodes_visited": 1216,
+        "goals_collected": 2,
+        "coverage_percentage": 0.6781376518218624,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 30,
+        "computation_time": 0.0001289844512939453,
+        "success_rate": 1.0,
+        "nodes_expanded": 30,
+        "nodes_visited": 88,
+        "goals_collected": 2,
+        "coverage_percentage": 0.30364372469635625,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 67,
+        "computation_time": 0.00029087066650390625,
+        "success_rate": 1.0,
+        "nodes_expanded": 67,
+        "nodes_visited": 199,
+        "goals_collected": 1,
+        "coverage_percentage": 0.6781376518218624,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 11,
+        "computation_time": 4.363059997558594e-05,
+        "success_rate": 1.0,
+        "nodes_expanded": 11,
+        "nodes_visited": 31,
+        "goals_collected": 1,
+        "coverage_percentage": 0.11133603238866396,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 44,
+        "computation_time": 0.00031948089599609375,
+        "success_rate": 1.0,
+        "nodes_expanded": 85,
+        "nodes_visited": 172,
+        "goals_collected": 2,
+        "coverage_percentage": 0.44534412955465585,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 84,
+        "computation_time": 0.0003590583801269531,
+        "success_rate": 1.0,
+        "nodes_expanded": 84,
+        "nodes_visited": 246,
+        "goals_collected": 2,
+        "coverage_percentage": 0.8502024291497976,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 81,
+        "computation_time": 0.0003273487091064453,
+        "success_rate": 1.0,
+        "nodes_expanded": 81,
+        "nodes_visited": 241,
+        "goals_collected": 3,
+        "coverage_percentage": 0.819838056680162,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 91,
+        "computation_time": 0.006707906723022461,
+        "success_rate": 1.0,
+        "nodes_expanded": 2002,
+        "nodes_visited": 2147,
+        "goals_collected": 4,
+        "coverage_percentage": 0.9210526315789472,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 39,
+        "computation_time": 0.00017118453979492188,
+        "success_rate": 1.0,
+        "nodes_expanded": 39,
+        "nodes_visited": 115,
+        "goals_collected": 3,
+        "coverage_percentage": 0.39473684210526316,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 53,
+        "computation_time": 0.00022649765014648438,
+        "success_rate": 1.0,
+        "nodes_expanded": 53,
+        "nodes_visited": 157,
+        "goals_collected": 2,
+        "coverage_percentage": 0.5364372469635628,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 87,
+        "computation_time": 0.004158735275268555,
+        "success_rate": 1.0,
+        "nodes_expanded": 1223,
+        "nodes_visited": 1396,
+        "goals_collected": 1,
+        "coverage_percentage": 0.8805668016194331,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 58,
+        "computation_time": 0.002725839614868164,
+        "success_rate": 1.0,
+        "nodes_expanded": 827,
+        "nodes_visited": 940,
+        "goals_collected": 1,
+        "coverage_percentage": 0.5870445344129555,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 25,
+        "computation_time": 0.00010800361633300781,
+        "success_rate": 1.0,
+        "nodes_expanded": 25,
+        "nodes_visited": 73,
+        "goals_collected": 1,
+        "coverage_percentage": 0.25303643724696356,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 44,
+        "computation_time": 0.0005629062652587891,
+        "success_rate": 1.0,
+        "nodes_expanded": 164,
+        "nodes_visited": 252,
+        "goals_collected": 2,
+        "coverage_percentage": 0.44534412955465585,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 34,
+        "computation_time": 0.0007882118225097656,
+        "success_rate": 1.0,
+        "nodes_expanded": 235,
+        "nodes_visited": 299,
+        "goals_collected": 1,
+        "coverage_percentage": 0.3441295546558705,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 19,
+        "computation_time": 7.796287536621094e-05,
+        "success_rate": 1.0,
+        "nodes_expanded": 19,
+        "nodes_visited": 55,
+        "goals_collected": 1,
+        "coverage_percentage": 0.19230769230769232,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 24,
+        "computation_time": 0.00010275840759277344,
+        "success_rate": 1.0,
+        "nodes_expanded": 24,
+        "nodes_visited": 70,
+        "goals_collected": 1,
+        "coverage_percentage": 0.24291497975708504,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 66,
+        "computation_time": 0.0031919479370117188,
+        "success_rate": 1.0,
+        "nodes_expanded": 960,
+        "nodes_visited": 1087,
+        "goals_collected": 3,
+        "coverage_percentage": 0.6680161943319839,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 35,
+        "computation_time": 0.0007395744323730469,
+        "success_rate": 1.0,
+        "nodes_expanded": 217,
+        "nodes_visited": 286,
+        "goals_collected": 1,
+        "coverage_percentage": 0.354251012145749,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 86,
+        "computation_time": 0.00037169456481933594,
+        "success_rate": 1.0,
+        "nodes_expanded": 86,
+        "nodes_visited": 256,
+        "goals_collected": 3,
+        "coverage_percentage": 0.8704453441295547,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 47,
+        "computation_time": 0.0021381378173828125,
+        "success_rate": 1.0,
+        "nodes_expanded": 551,
+        "nodes_visited": 643,
+        "goals_collected": 2,
+        "coverage_percentage": 0.47570850202429155,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 61,
+        "computation_time": 0.00027561187744140625,
+        "success_rate": 1.0,
+        "nodes_expanded": 61,
+        "nodes_visited": 181,
+        "goals_collected": 1,
+        "coverage_percentage": 0.6174089068825911,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 46,
+        "computation_time": 0.0011148452758789062,
+        "success_rate": 1.0,
+        "nodes_expanded": 338,
+        "nodes_visited": 428,
+        "goals_collected": 2,
+        "coverage_percentage": 0.465587044534413,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 81,
+        "computation_time": 0.004172801971435547,
+        "success_rate": 1.0,
+        "nodes_expanded": 1247,
+        "nodes_visited": 1405,
+        "goals_collected": 7,
+        "coverage_percentage": 0.819838056680162,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 59,
+        "computation_time": 0.0029304027557373047,
+        "success_rate": 1.0,
+        "nodes_expanded": 857,
+        "nodes_visited": 967,
+        "goals_collected": 3,
+        "coverage_percentage": 0.597165991902834,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 71,
+        "computation_time": 0.0003142356872558594,
+        "success_rate": 1.0,
+        "nodes_expanded": 71,
+        "nodes_visited": 211,
+        "goals_collected": 4,
+        "coverage_percentage": 0.7186234817813765,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 53,
+        "computation_time": 0.002134561538696289,
+        "success_rate": 1.0,
+        "nodes_expanded": 649,
+        "nodes_visited": 754,
+        "goals_collected": 2,
+        "coverage_percentage": 0.5364372469635628,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 92,
+        "computation_time": 0.0012054443359375,
+        "success_rate": 1.0,
+        "nodes_expanded": 334,
+        "nodes_visited": 508,
+        "goals_collected": 3,
+        "coverage_percentage": 0.931174089068826,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 141,
+        "computation_time": 0.016047239303588867,
+        "success_rate": 1.0,
+        "nodes_expanded": 4595,
+        "nodes_visited": 4856,
+        "goals_collected": 4,
+        "coverage_percentage": 1.4271255060728745,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 56,
+        "computation_time": 0.00025844573974609375,
+        "success_rate": 1.0,
+        "nodes_expanded": 56,
+        "nodes_visited": 161,
+        "goals_collected": 1,
+        "coverage_percentage": 0.5668016194331984,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 80,
+        "computation_time": 0.00054931640625,
+        "success_rate": 1.0,
+        "nodes_expanded": 146,
+        "nodes_visited": 300,
+        "goals_collected": 2,
+        "coverage_percentage": 0.8097165991902834,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 102,
+        "computation_time": 0.0004067420959472656,
+        "success_rate": 1.0,
+        "nodes_expanded": 102,
+        "nodes_visited": 267,
+        "goals_collected": 1,
+        "coverage_percentage": 1.0323886639676114,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 70,
+        "computation_time": 0.0033211708068847656,
+        "success_rate": 1.0,
+        "nodes_expanded": 1022,
+        "nodes_visited": 1145,
+        "goals_collected": 2,
+        "coverage_percentage": 0.708502024291498,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 7,
+        "computation_time": 2.6226043701171875e-05,
+        "success_rate": 1.0,
+        "nodes_expanded": 7,
+        "nodes_visited": 19,
+        "goals_collected": 1,
+        "coverage_percentage": 0.0708502024291498,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 95,
+        "computation_time": 0.005128145217895508,
+        "success_rate": 1.0,
+        "nodes_expanded": 1531,
+        "nodes_visited": 1720,
+        "goals_collected": 3,
+        "coverage_percentage": 0.9615384615384616,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 62,
+        "computation_time": 0.0024826526641845703,
+        "success_rate": 1.0,
+        "nodes_expanded": 742,
+        "nodes_visited": 862,
+        "goals_collected": 2,
+        "coverage_percentage": 0.6275303643724697,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 69,
+        "computation_time": 0.0037271976470947266,
+        "success_rate": 1.0,
+        "nodes_expanded": 1119,
+        "nodes_visited": 1256,
+        "goals_collected": 3,
+        "coverage_percentage": 0.6983805668016194,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 88,
+        "computation_time": 0.0061528682708740234,
+        "success_rate": 1.0,
+        "nodes_expanded": 1743,
+        "nodes_visited": 1912,
+        "goals_collected": 5,
+        "coverage_percentage": 0.8906882591093117,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 70,
+        "computation_time": 0.0011355876922607422,
+        "success_rate": 1.0,
+        "nodes_expanded": 324,
+        "nodes_visited": 461,
+        "goals_collected": 4,
+        "coverage_percentage": 0.708502024291498,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 40,
+        "computation_time": 0.00016570091247558594,
+        "success_rate": 1.0,
+        "nodes_expanded": 40,
+        "nodes_visited": 118,
+        "goals_collected": 3,
+        "coverage_percentage": 0.4048582995951417,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 106,
+        "computation_time": 0.007209062576293945,
+        "success_rate": 1.0,
+        "nodes_expanded": 2018,
+        "nodes_visited": 2226,
+        "goals_collected": 2,
+        "coverage_percentage": 1.0728744939271255,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 38,
+        "computation_time": 0.0011820793151855469,
+        "success_rate": 1.0,
+        "nodes_expanded": 358,
+        "nodes_visited": 430,
+        "goals_collected": 3,
+        "coverage_percentage": 0.38461538461538464,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 96,
+        "computation_time": 0.006713390350341797,
+        "success_rate": 1.0,
+        "nodes_expanded": 1960,
+        "nodes_visited": 2150,
+        "goals_collected": 2,
+        "coverage_percentage": 0.9716599190283401,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 88,
+        "computation_time": 0.0003731250762939453,
+        "success_rate": 1.0,
+        "nodes_expanded": 88,
+        "nodes_visited": 260,
+        "goals_collected": 1,
+        "coverage_percentage": 0.8906882591093117,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 91,
+        "computation_time": 0.000682830810546875,
+        "success_rate": 1.0,
+        "nodes_expanded": 189,
+        "nodes_visited": 309,
+        "goals_collected": 1,
+        "coverage_percentage": 0.9210526315789472,
+        "environment": "sparse"
+      }
+    ],
+    "dijkstra": [
+      {
+        "path_length": 31,
+        "computation_time": 0.0031964778900146484,
+        "success_rate": 1.0,
+        "nodes_expanded": 999,
+        "nodes_visited": 1050,
+        "goals_collected": 4,
+        "coverage_percentage": 0.31376518218623484,
+        "environment": "dense"
+      },
+      {
+        "path_length": 10,
+        "computation_time": 0.0005033016204833984,
+        "success_rate": 1.0,
+        "nodes_expanded": 154,
+        "nodes_visited": 191,
+        "goals_collected": 1,
+        "coverage_percentage": 0.10121457489878542,
+        "environment": "dense"
+      },
+      {
+        "path_length": 36,
+        "computation_time": 0.007148027420043945,
+        "success_rate": 1.0,
+        "nodes_expanded": 2245,
+        "nodes_visited": 2348,
+        "goals_collected": 2,
+        "coverage_percentage": 0.3643724696356275,
+        "environment": "dense"
+      },
+      {
+        "path_length": 85,
+        "computation_time": 0.05975031852722168,
+        "success_rate": 1.0,
+        "nodes_expanded": 7867,
+        "nodes_visited": 7954,
+        "goals_collected": 4,
+        "coverage_percentage": 0.8603238866396761,
+        "environment": "dense"
+      },
+      {
+        "path_length": 58,
+        "computation_time": 0.016595840454101562,
+        "success_rate": 1.0,
+        "nodes_expanded": 4545,
+        "nodes_visited": 4657,
+        "goals_collected": 1,
+        "coverage_percentage": 0.5870445344129555,
+        "environment": "dense"
+      },
+      {
+        "path_length": 60,
+        "computation_time": 0.012888669967651367,
+        "success_rate": 1.0,
+        "nodes_expanded": 4111,
+        "nodes_visited": 4215,
+        "goals_collected": 1,
+        "coverage_percentage": 0.6072874493927125,
+        "environment": "dense"
+      },
+      {
+        "path_length": 53,
+        "computation_time": 0.022680997848510742,
+        "success_rate": 1.0,
+        "nodes_expanded": 5160,
+        "nodes_visited": 5328,
+        "goals_collected": 1,
+        "coverage_percentage": 0.5364372469635628,
+        "environment": "dense"
+      },
+      {
+        "path_length": 109,
+        "computation_time": 0.028705120086669922,
+        "success_rate": 1.0,
+        "nodes_expanded": 8089,
+        "nodes_visited": 8146,
+        "goals_collected": 3,
+        "coverage_percentage": 1.1032388663967612,
+        "environment": "dense"
+      },
+      {
+        "path_length": 59,
+        "computation_time": 0.015220880508422852,
+        "success_rate": 1.0,
+        "nodes_expanded": 4471,
+        "nodes_visited": 4580,
+        "goals_collected": 4,
+        "coverage_percentage": 0.597165991902834,
+        "environment": "dense"
+      },
+      {
+        "path_length": 141,
+        "computation_time": 0.030367136001586914,
+        "success_rate": 1.0,
+        "nodes_expanded": 9760,
+        "nodes_visited": 9775,
+        "goals_collected": 5,
+        "coverage_percentage": 1.4271255060728745,
+        "environment": "dense"
+      },
+      {
+        "path_length": 22,
+        "computation_time": 0.0024416446685791016,
+        "success_rate": 1.0,
+        "nodes_expanded": 792,
+        "nodes_visited": 854,
+        "goals_collected": 1,
+        "coverage_percentage": 0.22267206477732793,
+        "environment": "dense"
+      },
+      {
+        "path_length": 56,
+        "computation_time": 0.014272928237915039,
+        "success_rate": 1.0,
+        "nodes_expanded": 4275,
+        "nodes_visited": 4392,
+        "goals_collected": 3,
+        "coverage_percentage": 0.5668016194331984,
+        "environment": "dense"
+      },
+      {
+        "path_length": 61,
+        "computation_time": 0.016389846801757812,
+        "success_rate": 1.0,
+        "nodes_expanded": 4839,
+        "nodes_visited": 4951,
+        "goals_collected": 2,
+        "coverage_percentage": 0.6174089068825911,
+        "environment": "dense"
+      },
+      {
+        "path_length": 45,
+        "computation_time": 0.008650779724121094,
+        "success_rate": 1.0,
+        "nodes_expanded": 2418,
+        "nodes_visited": 2499,
+        "goals_collected": 2,
+        "coverage_percentage": 0.4554655870445344,
+        "environment": "dense"
+      },
+      {
+        "path_length": 85,
+        "computation_time": 0.023282527923583984,
+        "success_rate": 1.0,
+        "nodes_expanded": 6940,
+        "nodes_visited": 7036,
+        "goals_collected": 2,
+        "coverage_percentage": 0.8603238866396761,
+        "environment": "dense"
+      },
+      {
+        "path_length": 33,
+        "computation_time": 0.004971742630004883,
+        "success_rate": 1.0,
+        "nodes_expanded": 1354,
+        "nodes_visited": 1430,
+        "goals_collected": 1,
+        "coverage_percentage": 0.33400809716599195,
+        "environment": "dense"
+      },
+      {
+        "path_length": 76,
+        "computation_time": 0.016366243362426758,
+        "success_rate": 1.0,
+        "nodes_expanded": 4864,
+        "nodes_visited": 4964,
+        "goals_collected": 2,
+        "coverage_percentage": 0.7692307692307693,
+        "environment": "dense"
+      },
+      {
+        "path_length": 41,
+        "computation_time": 0.006902933120727539,
+        "success_rate": 1.0,
+        "nodes_expanded": 2207,
+        "nodes_visited": 2286,
+        "goals_collected": 2,
+        "coverage_percentage": 0.4149797570850202,
+        "environment": "dense"
+      },
+      {
+        "path_length": 41,
+        "computation_time": 0.007714509963989258,
+        "success_rate": 1.0,
+        "nodes_expanded": 2429,
+        "nodes_visited": 2512,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4149797570850202,
+        "environment": "dense"
+      },
+      {
+        "path_length": 20,
+        "computation_time": 0.0011250972747802734,
+        "success_rate": 1.0,
+        "nodes_expanded": 367,
+        "nodes_visited": 406,
+        "goals_collected": 1,
+        "coverage_percentage": 0.20242914979757085,
+        "environment": "dense"
+      },
+      {
+        "path_length": 57,
+        "computation_time": 0.012339115142822266,
+        "success_rate": 1.0,
+        "nodes_expanded": 3357,
+        "nodes_visited": 3445,
+        "goals_collected": 4,
+        "coverage_percentage": 0.576923076923077,
+        "environment": "dense"
+      },
+      {
+        "path_length": 42,
+        "computation_time": 0.008574247360229492,
+        "success_rate": 1.0,
+        "nodes_expanded": 2365,
+        "nodes_visited": 2463,
+        "goals_collected": 2,
+        "coverage_percentage": 0.4251012145748988,
+        "environment": "dense"
+      },
+      {
+        "path_length": 43,
+        "computation_time": 0.00680232048034668,
+        "success_rate": 1.0,
+        "nodes_expanded": 2133,
+        "nodes_visited": 2206,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4352226720647773,
+        "environment": "dense"
+      },
+      {
+        "path_length": 139,
+        "computation_time": 0.032674551010131836,
+        "success_rate": 1.0,
+        "nodes_expanded": 9511,
+        "nodes_visited": 9537,
+        "goals_collected": 11,
+        "coverage_percentage": 1.4068825910931175,
+        "environment": "dense"
+      },
+      {
+        "path_length": 75,
+        "computation_time": 0.018619537353515625,
+        "success_rate": 1.0,
+        "nodes_expanded": 5479,
+        "nodes_visited": 5589,
+        "goals_collected": 4,
+        "coverage_percentage": 0.7591093117408907,
+        "environment": "dense"
+      },
+      {
+        "path_length": 43,
+        "computation_time": 0.01276707649230957,
+        "success_rate": 1.0,
+        "nodes_expanded": 3530,
+        "nodes_visited": 3688,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4352226720647773,
+        "environment": "dense"
+      },
+      {
+        "path_length": 49,
+        "computation_time": 0.013219356536865234,
+        "success_rate": 1.0,
+        "nodes_expanded": 3752,
+        "nodes_visited": 3860,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4959514170040486,
+        "environment": "dense"
+      },
+      {
+        "path_length": 61,
+        "computation_time": 0.02084827423095703,
+        "success_rate": 1.0,
+        "nodes_expanded": 6411,
+        "nodes_visited": 6565,
+        "goals_collected": 4,
+        "coverage_percentage": 0.6174089068825911,
+        "environment": "dense"
+      },
+      {
+        "path_length": 89,
+        "computation_time": 0.026560068130493164,
+        "success_rate": 1.0,
+        "nodes_expanded": 7913,
+        "nodes_visited": 7994,
+        "goals_collected": 2,
+        "coverage_percentage": 0.9008097165991902,
+        "environment": "dense"
+      },
+      {
+        "path_length": 126,
+        "computation_time": 0.03243851661682129,
+        "success_rate": 1.0,
+        "nodes_expanded": 9604,
+        "nodes_visited": 9633,
+        "goals_collected": 4,
+        "coverage_percentage": 1.2753036437246963,
+        "environment": "dense"
+      },
+      {
+        "path_length": 80,
+        "computation_time": 0.016618013381958008,
+        "success_rate": 1.0,
+        "nodes_expanded": 4961,
+        "nodes_visited": 5064,
+        "goals_collected": 6,
+        "coverage_percentage": 0.8097165991902834,
+        "environment": "dense"
+      },
+      {
+        "path_length": 55,
+        "computation_time": 0.011137723922729492,
+        "success_rate": 1.0,
+        "nodes_expanded": 3431,
+        "nodes_visited": 3528,
+        "goals_collected": 4,
+        "coverage_percentage": 0.5566801619433198,
+        "environment": "dense"
+      },
+      {
+        "path_length": 55,
+        "computation_time": 0.013201236724853516,
+        "success_rate": 1.0,
+        "nodes_expanded": 4116,
+        "nodes_visited": 4218,
+        "goals_collected": 2,
+        "coverage_percentage": 0.5566801619433198,
+        "environment": "dense"
+      },
+      {
+        "path_length": 28,
+        "computation_time": 0.004495859146118164,
+        "success_rate": 1.0,
+        "nodes_expanded": 1411,
+        "nodes_visited": 1520,
+        "goals_collected": 2,
+        "coverage_percentage": 0.2834008097165992,
+        "environment": "dense"
+      },
+      {
+        "path_length": 37,
+        "computation_time": 0.005403280258178711,
+        "success_rate": 1.0,
+        "nodes_expanded": 1634,
+        "nodes_visited": 1716,
+        "goals_collected": 1,
+        "coverage_percentage": 0.37449392712550605,
+        "environment": "dense"
+      },
+      {
+        "path_length": 88,
+        "computation_time": 0.01817488670349121,
+        "success_rate": 1.0,
+        "nodes_expanded": 5600,
+        "nodes_visited": 5699,
+        "goals_collected": 3,
+        "coverage_percentage": 0.8906882591093117,
+        "environment": "dense"
+      },
+      {
+        "path_length": 94,
+        "computation_time": 0.020607709884643555,
+        "success_rate": 1.0,
+        "nodes_expanded": 6496,
+        "nodes_visited": 6595,
+        "goals_collected": 1,
+        "coverage_percentage": 0.9514170040485831,
+        "environment": "dense"
+      },
+      {
+        "path_length": 77,
+        "computation_time": 0.0263063907623291,
+        "success_rate": 1.0,
+        "nodes_expanded": 7766,
+        "nodes_visited": 7868,
+        "goals_collected": 6,
+        "coverage_percentage": 0.7793522267206479,
+        "environment": "dense"
+      },
+      {
+        "path_length": 8,
+        "computation_time": 0.0002894401550292969,
+        "success_rate": 1.0,
+        "nodes_expanded": 89,
+        "nodes_visited": 118,
+        "goals_collected": 2,
+        "coverage_percentage": 0.08097165991902834,
+        "environment": "dense"
+      },
+      {
+        "path_length": 58,
+        "computation_time": 0.021167278289794922,
+        "success_rate": 1.0,
+        "nodes_expanded": 6139,
+        "nodes_visited": 6305,
+        "goals_collected": 1,
+        "coverage_percentage": 0.5870445344129555,
+        "environment": "dense"
+      },
+      {
+        "path_length": 19,
+        "computation_time": 0.002017498016357422,
+        "success_rate": 1.0,
+        "nodes_expanded": 624,
+        "nodes_visited": 697,
+        "goals_collected": 2,
+        "coverage_percentage": 0.19230769230769232,
+        "environment": "dense"
+      },
+      {
+        "path_length": 27,
+        "computation_time": 0.0033507347106933594,
+        "success_rate": 1.0,
+        "nodes_expanded": 1072,
+        "nodes_visited": 1143,
+        "goals_collected": 1,
+        "coverage_percentage": 0.2732793522267206,
+        "environment": "dense"
+      },
+      {
+        "path_length": 59,
+        "computation_time": 0.01888751983642578,
+        "success_rate": 1.0,
+        "nodes_expanded": 5670,
+        "nodes_visited": 5814,
+        "goals_collected": 2,
+        "coverage_percentage": 0.597165991902834,
+        "environment": "dense"
+      },
+      {
+        "path_length": 23,
+        "computation_time": 0.0030829906463623047,
+        "success_rate": 1.0,
+        "nodes_expanded": 985,
+        "nodes_visited": 1076,
+        "goals_collected": 1,
+        "coverage_percentage": 0.2327935222672065,
+        "environment": "dense"
+      },
+      {
+        "path_length": 85,
+        "computation_time": 0.018535852432250977,
+        "success_rate": 1.0,
+        "nodes_expanded": 5531,
+        "nodes_visited": 5631,
+        "goals_collected": 5,
+        "coverage_percentage": 0.8603238866396761,
+        "environment": "dense"
+      },
+      {
+        "path_length": 63,
+        "computation_time": 0.012697219848632812,
+        "success_rate": 1.0,
+        "nodes_expanded": 3979,
+        "nodes_visited": 4080,
+        "goals_collected": 2,
+        "coverage_percentage": 0.6376518218623481,
+        "environment": "dense"
+      },
+      {
+        "path_length": 69,
+        "computation_time": 0.016602277755737305,
+        "success_rate": 1.0,
+        "nodes_expanded": 5137,
+        "nodes_visited": 5246,
+        "goals_collected": 6,
+        "coverage_percentage": 0.6983805668016194,
+        "environment": "dense"
+      },
+      {
+        "path_length": 41,
+        "computation_time": 0.010336637496948242,
+        "success_rate": 1.0,
+        "nodes_expanded": 3151,
+        "nodes_visited": 3308,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4149797570850202,
+        "environment": "dense"
+      },
+      {
+        "path_length": 85,
+        "computation_time": 0.01942586898803711,
+        "success_rate": 1.0,
+        "nodes_expanded": 6104,
+        "nodes_visited": 6202,
+        "goals_collected": 2,
+        "coverage_percentage": 0.8603238866396761,
+        "environment": "dense"
+      },
+      {
+        "path_length": 61,
+        "computation_time": 0.013889074325561523,
+        "success_rate": 1.0,
+        "nodes_expanded": 4328,
+        "nodes_visited": 4431,
+        "goals_collected": 5,
+        "coverage_percentage": 0.6174089068825911,
+        "environment": "dense"
+      },
+      {
+        "path_length": 24,
+        "computation_time": 0.0017423629760742188,
+        "success_rate": 1.0,
+        "nodes_expanded": 575,
+        "nodes_visited": 617,
+        "goals_collected": 1,
+        "coverage_percentage": 0.24291497975708504,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 69,
+        "computation_time": 0.01949143409729004,
+        "success_rate": 1.0,
+        "nodes_expanded": 6057,
+        "nodes_visited": 6169,
+        "goals_collected": 3,
+        "coverage_percentage": 0.6983805668016194,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 110,
+        "computation_time": 0.027933120727539062,
+        "success_rate": 1.0,
+        "nodes_expanded": 8749,
+        "nodes_visited": 8812,
+        "goals_collected": 5,
+        "coverage_percentage": 1.1133603238866396,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 78,
+        "computation_time": 0.019313573837280273,
+        "success_rate": 1.0,
+        "nodes_expanded": 5770,
+        "nodes_visited": 5870,
+        "goals_collected": 2,
+        "coverage_percentage": 0.7894736842105263,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 31,
+        "computation_time": 0.004605531692504883,
+        "success_rate": 1.0,
+        "nodes_expanded": 1426,
+        "nodes_visited": 1509,
+        "goals_collected": 1,
+        "coverage_percentage": 0.31376518218623484,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 54,
+        "computation_time": 0.013861417770385742,
+        "success_rate": 1.0,
+        "nodes_expanded": 4356,
+        "nodes_visited": 4472,
+        "goals_collected": 3,
+        "coverage_percentage": 0.5465587044534412,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 117,
+        "computation_time": 0.032048940658569336,
+        "success_rate": 1.0,
+        "nodes_expanded": 9801,
+        "nodes_visited": 9817,
+        "goals_collected": 1,
+        "coverage_percentage": 1.1842105263157896,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 92,
+        "computation_time": 0.027612924575805664,
+        "success_rate": 1.0,
+        "nodes_expanded": 7428,
+        "nodes_visited": 7521,
+        "goals_collected": 2,
+        "coverage_percentage": 0.931174089068826,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 18,
+        "computation_time": 0.0017724037170410156,
+        "success_rate": 1.0,
+        "nodes_expanded": 580,
+        "nodes_visited": 647,
+        "goals_collected": 2,
+        "coverage_percentage": 0.18218623481781376,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 73,
+        "computation_time": 0.02144336700439453,
+        "success_rate": 1.0,
+        "nodes_expanded": 5080,
+        "nodes_visited": 5173,
+        "goals_collected": 3,
+        "coverage_percentage": 0.7388663967611336,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 84,
+        "computation_time": 0.014983177185058594,
+        "success_rate": 1.0,
+        "nodes_expanded": 4610,
+        "nodes_visited": 4706,
+        "goals_collected": 3,
+        "coverage_percentage": 0.8502024291497976,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 89,
+        "computation_time": 0.0435183048248291,
+        "success_rate": 1.0,
+        "nodes_expanded": 7102,
+        "nodes_visited": 7192,
+        "goals_collected": 2,
+        "coverage_percentage": 0.9008097165991902,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 50,
+        "computation_time": 0.02126455307006836,
+        "success_rate": 1.0,
+        "nodes_expanded": 4372,
+        "nodes_visited": 4517,
+        "goals_collected": 1,
+        "coverage_percentage": 0.5060728744939271,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 74,
+        "computation_time": 0.011732101440429688,
+        "success_rate": 1.0,
+        "nodes_expanded": 3637,
+        "nodes_visited": 3724,
+        "goals_collected": 1,
+        "coverage_percentage": 0.7489878542510121,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 20,
+        "computation_time": 0.002257823944091797,
+        "success_rate": 1.0,
+        "nodes_expanded": 678,
+        "nodes_visited": 754,
+        "goals_collected": 1,
+        "coverage_percentage": 0.20242914979757085,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 64,
+        "computation_time": 0.020081281661987305,
+        "success_rate": 1.0,
+        "nodes_expanded": 6111,
+        "nodes_visited": 6232,
+        "goals_collected": 3,
+        "coverage_percentage": 0.6477732793522267,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 33,
+        "computation_time": 0.006129264831542969,
+        "success_rate": 1.0,
+        "nodes_expanded": 1913,
+        "nodes_visited": 2018,
+        "goals_collected": 3,
+        "coverage_percentage": 0.33400809716599195,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 59,
+        "computation_time": 0.019590139389038086,
+        "success_rate": 1.0,
+        "nodes_expanded": 6079,
+        "nodes_visited": 6236,
+        "goals_collected": 1,
+        "coverage_percentage": 0.597165991902834,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 28,
+        "computation_time": 0.004836320877075195,
+        "success_rate": 1.0,
+        "nodes_expanded": 1421,
+        "nodes_visited": 1529,
+        "goals_collected": 1,
+        "coverage_percentage": 0.2834008097165992,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 72,
+        "computation_time": 0.01533961296081543,
+        "success_rate": 1.0,
+        "nodes_expanded": 4813,
+        "nodes_visited": 4917,
+        "goals_collected": 2,
+        "coverage_percentage": 0.728744939271255,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 80,
+        "computation_time": 0.027721881866455078,
+        "success_rate": 1.0,
+        "nodes_expanded": 6967,
+        "nodes_visited": 7063,
+        "goals_collected": 1,
+        "coverage_percentage": 0.8097165991902834,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 88,
+        "computation_time": 0.017359256744384766,
+        "success_rate": 1.0,
+        "nodes_expanded": 5243,
+        "nodes_visited": 5340,
+        "goals_collected": 3,
+        "coverage_percentage": 0.8906882591093117,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 45,
+        "computation_time": 0.004745006561279297,
+        "success_rate": 1.0,
+        "nodes_expanded": 1547,
+        "nodes_visited": 1603,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4554655870445344,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 8,
+        "computation_time": 0.00031065940856933594,
+        "success_rate": 1.0,
+        "nodes_expanded": 95,
+        "nodes_visited": 124,
+        "goals_collected": 3,
+        "coverage_percentage": 0.08097165991902834,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 140,
+        "computation_time": 0.030298233032226562,
+        "success_rate": 1.0,
+        "nodes_expanded": 9354,
+        "nodes_visited": 9385,
+        "goals_collected": 2,
+        "coverage_percentage": 1.417004048582996,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 55,
+        "computation_time": 0.009682893753051758,
+        "success_rate": 1.0,
+        "nodes_expanded": 3047,
+        "nodes_visited": 3139,
+        "goals_collected": 3,
+        "coverage_percentage": 0.5566801619433198,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 87,
+        "computation_time": 0.021982431411743164,
+        "success_rate": 1.0,
+        "nodes_expanded": 6537,
+        "nodes_visited": 6634,
+        "goals_collected": 2,
+        "coverage_percentage": 0.8805668016194331,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 42,
+        "computation_time": 0.00933074951171875,
+        "success_rate": 1.0,
+        "nodes_expanded": 2876,
+        "nodes_visited": 2997,
+        "goals_collected": 5,
+        "coverage_percentage": 0.4251012145748988,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 76,
+        "computation_time": 0.02501082420349121,
+        "success_rate": 1.0,
+        "nodes_expanded": 7580,
+        "nodes_visited": 7685,
+        "goals_collected": 1,
+        "coverage_percentage": 0.7692307692307693,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 52,
+        "computation_time": 0.014484405517578125,
+        "success_rate": 1.0,
+        "nodes_expanded": 4503,
+        "nodes_visited": 4635,
+        "goals_collected": 1,
+        "coverage_percentage": 0.5263157894736842,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 10,
+        "computation_time": 0.0005278587341308594,
+        "success_rate": 1.0,
+        "nodes_expanded": 167,
+        "nodes_visited": 206,
+        "goals_collected": 1,
+        "coverage_percentage": 0.10121457489878542,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 45,
+        "computation_time": 0.007859230041503906,
+        "success_rate": 1.0,
+        "nodes_expanded": 2447,
+        "nodes_visited": 2545,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4554655870445344,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 98,
+        "computation_time": 0.0237429141998291,
+        "success_rate": 1.0,
+        "nodes_expanded": 7385,
+        "nodes_visited": 7468,
+        "goals_collected": 4,
+        "coverage_percentage": 0.9919028340080972,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 63,
+        "computation_time": 0.01571965217590332,
+        "success_rate": 1.0,
+        "nodes_expanded": 4837,
+        "nodes_visited": 4947,
+        "goals_collected": 2,
+        "coverage_percentage": 0.6376518218623481,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 71,
+        "computation_time": 0.020578861236572266,
+        "success_rate": 1.0,
+        "nodes_expanded": 5903,
+        "nodes_visited": 6014,
+        "goals_collected": 4,
+        "coverage_percentage": 0.7186234817813765,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 41,
+        "computation_time": 0.007239103317260742,
+        "success_rate": 1.0,
+        "nodes_expanded": 2243,
+        "nodes_visited": 2325,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4149797570850202,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 90,
+        "computation_time": 0.027688026428222656,
+        "success_rate": 1.0,
+        "nodes_expanded": 9142,
+        "nodes_visited": 9197,
+        "goals_collected": 3,
+        "coverage_percentage": 0.9109311740890688,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 133,
+        "computation_time": 0.027190685272216797,
+        "success_rate": 1.0,
+        "nodes_expanded": 8952,
+        "nodes_visited": 8994,
+        "goals_collected": 3,
+        "coverage_percentage": 1.3461538461538463,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 100,
+        "computation_time": 0.0227358341217041,
+        "success_rate": 1.0,
+        "nodes_expanded": 7704,
+        "nodes_visited": 7791,
+        "goals_collected": 6,
+        "coverage_percentage": 1.0121457489878543,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 28,
+        "computation_time": 0.0023903846740722656,
+        "success_rate": 1.0,
+        "nodes_expanded": 786,
+        "nodes_visited": 830,
+        "goals_collected": 3,
+        "coverage_percentage": 0.2834008097165992,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 57,
+        "computation_time": 0.009832143783569336,
+        "success_rate": 1.0,
+        "nodes_expanded": 3111,
+        "nodes_visited": 3214,
+        "goals_collected": 1,
+        "coverage_percentage": 0.576923076923077,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 91,
+        "computation_time": 0.02334117889404297,
+        "success_rate": 1.0,
+        "nodes_expanded": 7931,
+        "nodes_visited": 8015,
+        "goals_collected": 2,
+        "coverage_percentage": 0.9210526315789472,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 54,
+        "computation_time": 0.007805347442626953,
+        "success_rate": 1.0,
+        "nodes_expanded": 2375,
+        "nodes_visited": 2449,
+        "goals_collected": 2,
+        "coverage_percentage": 0.5465587044534412,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 42,
+        "computation_time": 0.009453773498535156,
+        "success_rate": 1.0,
+        "nodes_expanded": 3263,
+        "nodes_visited": 3414,
+        "goals_collected": 4,
+        "coverage_percentage": 0.4251012145748988,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 43,
+        "computation_time": 0.008899211883544922,
+        "success_rate": 1.0,
+        "nodes_expanded": 3030,
+        "nodes_visited": 3133,
+        "goals_collected": 3,
+        "coverage_percentage": 0.4352226720647773,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 46,
+        "computation_time": 0.012094497680664062,
+        "success_rate": 1.0,
+        "nodes_expanded": 3923,
+        "nodes_visited": 4085,
+        "goals_collected": 2,
+        "coverage_percentage": 0.465587044534413,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 13,
+        "computation_time": 0.0008809566497802734,
+        "success_rate": 1.0,
+        "nodes_expanded": 300,
+        "nodes_visited": 348,
+        "goals_collected": 1,
+        "coverage_percentage": 0.13157894736842105,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 40,
+        "computation_time": 0.008846521377563477,
+        "success_rate": 1.0,
+        "nodes_expanded": 2632,
+        "nodes_visited": 2744,
+        "goals_collected": 1,
+        "coverage_percentage": 0.4048582995951417,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 88,
+        "computation_time": 0.023551225662231445,
+        "success_rate": 1.0,
+        "nodes_expanded": 7586,
+        "nodes_visited": 7677,
+        "goals_collected": 1,
+        "coverage_percentage": 0.8906882591093117,
+        "environment": "sparse"
+      },
+      {
+        "path_length": 46,
+        "computation_time": 0.013086080551147461,
+        "success_rate": 1.0,
+        "nodes_expanded": 3922,
+        "nodes_visited": 4079,
+        "goals_collected": 3,
+        "coverage_percentage": 0.465587044534413,
+        "environment": "sparse"
+      }
+    ]
+  },
+  "environments": [
+    "sparse",
+    "dense"
+  ]
+}

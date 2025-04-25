@@ -1,0 +1,23 @@
+{
+    "environment": {
+        "name": "multi_agent_grid",
+        "grid_size": 50,
+        "num_agents": 3,
+        "num_goals": 100,
+        "num_obstacles": 15,
+        "max_steps": 1000
+    },
+    "algorithms": [
+        {
+            "name": "dqn",
+            "model_path": "models/dqn/dqn_model.pth"
+        },
+        {
+            "name": "a2c",
+            "model_path": "models/a2c/a2c_model.pth"
+        }
+    ],
+    "num_episodes": 50,
+    "max_steps": 1000,
+    "visualize": false
+} 

@@ -1,147 +1,102 @@
-# Pathfinding Algorithm Comparison
+# Path Planning Project
 
-This project implements and compares different pathfinding algorithms (A* and Dijkstra) in various grid-based environments.
+This project implements both traditional pathfinding algorithms and reinforcement learning approaches for path planning in a grid world environment.
 
 ## Project Structure
 
-```
-.
-├── algorithms/
-│   └── pathfinding/
-│       ├── astar.py         # A* implementation
-│       └── dijkstra.py      # Dijkstra's implementation
-├── env/
-│   ├── grid_world.py        # Grid environment implementation
-│   ├── configurations.py     # Environment configurations
-│   ├── movement_manager.py   # Handles agent movement and collision
-│   └── path_manager.py      # Manages path execution and validation
-├── visualization/
-│   ├── visualizer.py        # Main visualization logic
-│   ├── renderer.py          # Grid rendering and drawing
-│   └── controls.py          # User input handling
-├── comparisons/
-│   ├── metrics.py           # Metrics collection and analysis
-│   ├── visualizer.py        # Comparison visualization tools
-│   └── run_comparison.py    # Main comparison script
-├── main.py                  # Entry point for visualization
-└── requirements.txt         # Project dependencies
-```
+- `algorithms/`: Contains pathfinding and RL algorithms
+  - `pathfinding/`: Traditional pathfinding algorithms (A*, Dijkstra)
+  - `rl/`: Reinforcement learning algorithms (DQN, A2C)
+- `env/`: Environment implementations
+  - `grid_world.py`: Grid world environment for pathfinding
+  - `movement_manager.py`: Manages agent movements
+  - `path_manager.py`: Manages paths for agents
+  - `configurations.py`: Environment configurations
 
-## Installation
+## Pathfinding Algorithms
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd path-planning
-```
+The project implements traditional pathfinding algorithms:
+- A* Algorithm
+- Dijkstra's Algorithm
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+These algorithms are used in the `GridWorld` environment to find optimal paths for agents to reach goals while avoiding obstacles.
+
+## Reinforcement Learning
+
+The project also implements reinforcement learning approaches:
+- Deep Q-Network (DQN)
+- Advantage Actor-Critic (A2C)
+
+These algorithms learn to navigate the environment through trial and error, with the goal of maximizing rewards by collecting goals while avoiding obstacles.
+
+## Environment
+
+The project includes two environment implementations:
+1. `GridWorld`: A multi-agent environment for pathfinding algorithms
+2. `PathfindingEnv`: A Gym-compatible environment for reinforcement learning
 
 ## Usage
 
-### Running Individual Pathfinding
+### Pathfinding
 
-To visualize a single pathfinding instance:
+```python
+from env.grid_world import GridWorld
+from env.configurations import DenseConfig
+
+# Create environment with dense configuration
+config = DenseConfig()
+env = GridWorld(config=config)
+
+# Reset environment
+env.reset()
+
+# Get valid actions for an agent
+actions = env.get_valid_actions(0)
+
+# Step environment
+grid, agent_positions, goal_positions, done, info = env.step(actions)
+```
+
+### Reinforcement Learning
+
+```python
+from algorithms.rl.environment import PathfindingEnv
+from algorithms.rl.dqn import DQNAgent
+
+# Create environment
+env = PathfindingEnv(grid_size=50, obstacle_density=0.3)
+
+# Create agent
+agent = DQNAgent(
+    state_shape=env.observation_space.shape,
+    action_size=env.action_space.n
+)
+
+# Training loop
+state = env.reset()
+done = False
+while not done:
+    action = agent.select_action(state)
+    next_state, reward, done, info = env.step(action)
+    agent.store_transition(state, action, reward, next_state, done)
+    state = next_state
+```
+
+## Training
+
+To train RL agents:
 
 ```bash
-python main.py dense astar
+# Train DQN agent
+python algorithms/rl/train.py --agent dqn --episodes 1000 --grid_size 50 --obstacle_density 0.3
+
+# Train A2C agent
+python algorithms/rl/train.py --agent a2c --episodes 1000 --grid_size 50 --obstacle_density 0.3
+
+# Train both agents
+python algorithms/rl/train.py --agent both --episodes 1000 --grid_size 50 --obstacle_density 0.3
 ```
 
-Arguments:
-1. Environment type: `dense` or `sparse`
-2. Algorithm: `astar` or `dijkstra`
+## Requirements
 
-Controls:
-- **SPACE**: Step through pathfinding
-- **R**: Reset environment
-- **ESC**: Exit
-
-### Running Algorithm Comparisons
-
-To run comprehensive algorithm comparisons:
-
-```bash
-python -m comparisons.run_comparison --configs dense sparse --num-runs 20
-```
-
-Options:
-- `--configs`: Environment configurations to test (`dense`, `sparse`)
-- `--num-runs`: Number of runs per algorithm per environment (default: 50)
-- `--algorithms`: Algorithms to compare (default: both `astar` and `dijkstra`)
-- `--output-dir`: Directory to save results (default: `comparison_results`)
-
-This will:
-1. Run both A* and Dijkstra's algorithm in dense and sparse environments
-2. Generate comparison plots organized by environment type
-3. Save results in the `comparison_results` directory
-
-### Output Structure
-
-```
-comparison_results/
-├── basic_comparison.png                    # Overall algorithm performance
-├── environment_comparison_path_length.png   # Path length across environments
-├── environment_comparison_computation_time.png
-├── environment_comparison_nodes_expanded.png
-├── dense/
-│   ├── performance_comparison.png          # Detailed dense environment analysis
-│   └── efficiency_comparison.png
-└── sparse/
-    ├── performance_comparison.png          # Detailed sparse environment analysis
-    └── efficiency_comparison.png
-```
-
-### Visualization Types
-
-1. Performance Comparisons (per environment):
-   - Path Length vs Nodes Expanded
-   - Computation Time vs Nodes Expanded
-   - Path Length CDF
-   - Computation Time CDF
-
-2. Efficiency Metrics (per environment):
-   - Path Length per Second
-   - Time per Path Length
-   - Nodes per Path Length
-
-3. Environment Comparisons:
-   - Path Length Distribution
-   - Computation Time Distribution
-   - Node Expansion Distribution
-
-## Environment Types
-
-- **Dense**: Grid world with high obstacle density (30% obstacles)
-   - More challenging paths
-   - Higher computation times
-   - Good for testing algorithm efficiency
-
-- **Sparse**: Grid world with low obstacle density (10% obstacles)
-   - More direct paths available
-   - Lower computation times
-   - Good for baseline comparisons
-
-## File Descriptions
-
-### Core Components
-- `main.py`: Main entry point for visualization
-- `grid_world.py`: Core grid environment implementation
-- `movement_manager.py`: Handles agent movement and collision detection
-- `path_manager.py`: Manages path execution and validation
-
-### Algorithms
-- `astar.py`: A* pathfinding implementation with heuristic search
-- `dijkstra.py`: Dijkstra's algorithm implementation
-
-### Visualization
-- `visualizer.py`: Main visualization logic and window management
-- `renderer.py`: Grid rendering and graphical elements
-- `controls.py`: User input handling and control mapping
-
-### Comparison Tools
-- `metrics.py`: Collects and analyzes algorithm performance metrics
-- `run_comparison.py`: Runs automated comparisons between algorithms
-- `visualizer.py`: Generates comparison plots and visualizations
+See `requirements.txt` for dependencies.
