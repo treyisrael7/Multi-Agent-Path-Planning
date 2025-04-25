@@ -1,102 +1,177 @@
-# Path Planning Project
+# Multi-Agent Pathfinding
 
-This project implements both traditional pathfinding algorithms and reinforcement learning approaches for path planning in a grid world environment.
+This repository implements and compares different approaches to multi-agent pathfinding, including classical search algorithms and reinforcement learning methods.
 
-## Project Structure
+## Repository Structure
 
-- `algorithms/`: Contains pathfinding and RL algorithms
-  - `pathfinding/`: Traditional pathfinding algorithms (A*, Dijkstra)
-  - `rl/`: Reinforcement learning algorithms (DQN, A2C)
-- `env/`: Environment implementations
-  - `grid_world.py`: Grid world environment for pathfinding
-  - `movement_manager.py`: Manages agent movements
-  - `path_manager.py`: Manages paths for agents
-  - `configurations.py`: Environment configurations
-
-## Pathfinding Algorithms
-
-The project implements traditional pathfinding algorithms:
-- A* Algorithm
-- Dijkstra's Algorithm
-
-These algorithms are used in the `GridWorld` environment to find optimal paths for agents to reach goals while avoiding obstacles.
-
-## Reinforcement Learning
-
-The project also implements reinforcement learning approaches:
-- Deep Q-Network (DQN)
-- Advantage Actor-Critic (A2C)
-
-These algorithms learn to navigate the environment through trial and error, with the goal of maximizing rewards by collecting goals while avoiding obstacles.
+```
+.
+├── algorithms/
+│   ├── rl/
+│   │   ├── agents/             # RL agent implementations
+│   │   │   ├── dqn.py         # Deep Q-Network implementation
+│   │   │   └── a2c.py         # Advantage Actor-Critic implementation
+│   │   ├── environment/        # RL environment implementation
+│   │   │   └── pathfinding_env.py  # Main environment class
+│   │   └── training/          # Training utilities and scripts
+│   └── search/                # Classical search algorithms
+│       ├── astar.py          # A* implementation
+│       ├── dijkstra.py       # Dijkstra's algorithm implementation
+│       ├── grid_world.py     # Grid world environment for search
+│       ├── path_manager.py   # Path management utilities
+│       ├── movement_manager.py # Movement control utilities
+│       └── configurations.py  # Environment configurations
+├── comparison_results/        # Results from algorithm comparisons
+│   ├── sparse/               # Results with sparse goal distribution
+│   ├── dense/               # Results with dense goal distribution
+│   ├── search/              # Classical search algorithm results
+│   └── rl/                  # RL algorithm results
+├── evaluation/
+│   ├── rl/                  # RL evaluation tools
+│   │   ├── scripts/         # Evaluation scripts
+│   │   ├── config.json      # Configuration for evaluations
+│   │   ├── compare.py       # Algorithm comparison utilities
+│   │   ├── metrics.py       # Performance metrics collection
+│   │   ├── visualizer.py    # Visualization tools for RL results
+│   │   ├── base_evaluator.py # Base evaluation class
+│   │   ├── dqn_evaluator.py # DQN-specific evaluation
+│   │   └── a2c_evaluator.py # A2C-specific evaluation
+│   └── search/              # Search algorithm evaluation
+│       ├── scripts/         # Evaluation scripts
+│       ├── metrics.py       # Performance metrics
+│       ├── visualizer.py    # Visualization tools
+│       ├── visualization.py # Additional visualization utilities
+│       └── compare_algorithms.py # Algorithm comparison
+├── models/                  # Trained model checkpoints
+│   ├── dqn/                # DQN model saves
+│   └── a2c/                # A2C model saves
+└── utils/                  # Utility functions and tools
+    ├── visualizer.py       # General visualization utilities
+    ├── renderer.py         # Environment rendering tools
+    └── controls.py         # User control interface
+```
 
 ## Environment
 
-The project includes two environment implementations:
-1. `GridWorld`: A multi-agent environment for pathfinding algorithms
-2. `PathfindingEnv`: A Gym-compatible environment for reinforcement learning
+The environment supports both classical search and reinforcement learning approaches:
+
+### Grid World Environment
+- Configurable grid size (default: 50x50)
+- Multiple agents (default: 3)
+- Configurable goals and obstacles
+- Support for different goal distribution patterns
+- Customizable movement patterns
+
+### RL Environment Features
+- Gymnasium-compatible interface
+- 8-directional movement per agent
+- 3-channel observation space (obstacles, agents, goals)
+- Configurable reward structure
+- Built-in metrics tracking
+
+### Goal Distribution Patterns
+- **Sparse**: Goals randomly distributed across the entire grid
+- **Dense**: Goals clustered in specific areas
+- Configurable via `configurations.py`
+
+### Reward Structure
+- Goal collection: +10.0
+- Obstacle collision: -1.0
+- Step penalty: -0.05
+- Progress toward goal: +0.3
+- Exploration bonus: +0.1
+
+## Algorithms
+
+### Reinforcement Learning
+- DQN (Deep Q-Network)
+  - Experience replay buffer
+  - Target network for stability
+  - Epsilon-greedy exploration
+  - Prioritized experience replay
+  - Double DQN implementation
+- A2C (Advantage Actor-Critic)
+  - Shared feature extraction
+  - Parallel advantage estimation
+  - Entropy regularization
+  - N-step returns
+  - GAE (Generalized Advantage Estimation)
+
+### Classical Search
+- A* with Manhattan distance heuristic
+  - Optimized path finding
+  - Adaptive heuristic weights
+- Dijkstra's algorithm
+  - Complete path coverage
+  - Multi-goal path planning
+
+## Evaluation Framework
+
+### Metrics
+- Episode return (cumulative reward)
+- Steps to goals (efficiency)
+- Time to convergence (learning speed)
+- Total goals collected (task completion)
+- Coverage area (exploration)
+- Path optimality (vs. optimal solutions)
+- Computational efficiency
+
+### Visualization Tools
+- Real-time environment rendering (`utils/renderer.py`)
+- Performance metric plotting (`utils/visualizer.py`)
+- Interactive controls (`utils/controls.py`)
+- Comparative analysis plots
+- Learning curve visualization
+- Path visualization
+
+### Evaluation Scripts
+- Individual algorithm evaluation
+- Comparative analysis
+- Batch processing
+- Custom metric computation
+- Statistical analysis
 
 ## Usage
 
-### Pathfinding
+1. Configure environment and evaluation parameters:
+   ```bash
+   # Edit evaluation/rl/config.json for RL settings
+   # Edit algorithms/search/configurations.py for search settings
+   ```
 
-```python
-from env.grid_world import GridWorld
-from env.configurations import DenseConfig
+2. Run evaluations:
+   ```bash
+   # RL evaluations
+   python evaluation/rl/evaluate_dqn.py
+   python evaluation/rl/evaluate_a2c.py
+   
+   # Search evaluations
+   python evaluation/search/run_comparison.py
+   ```
 
-# Create environment with dense configuration
-config = DenseConfig()
-env = GridWorld(config=config)
+3. Compare results:
+   ```bash
+   python evaluation/rl/compare.py
+   ```
 
-# Reset environment
-env.reset()
-
-# Get valid actions for an agent
-actions = env.get_valid_actions(0)
-
-# Step environment
-grid, agent_positions, goal_positions, done, info = env.step(actions)
-```
-
-### Reinforcement Learning
-
-```python
-from algorithms.rl.environment import PathfindingEnv
-from algorithms.rl.dqn import DQNAgent
-
-# Create environment
-env = PathfindingEnv(grid_size=50, obstacle_density=0.3)
-
-# Create agent
-agent = DQNAgent(
-    state_shape=env.observation_space.shape,
-    action_size=env.action_space.n
-)
-
-# Training loop
-state = env.reset()
-done = False
-while not done:
-    action = agent.select_action(state)
-    next_state, reward, done, info = env.step(action)
-    agent.store_transition(state, action, reward, next_state, done)
-    state = next_state
-```
-
-## Training
-
-To train RL agents:
-
-```bash
-# Train DQN agent
-python algorithms/rl/train.py --agent dqn --episodes 1000 --grid_size 50 --obstacle_density 0.3
-
-# Train A2C agent
-python algorithms/rl/train.py --agent a2c --episodes 1000 --grid_size 50 --obstacle_density 0.3
-
-# Train both agents
-python algorithms/rl/train.py --agent both --episodes 1000 --grid_size 50 --obstacle_density 0.3
-```
+4. Visualize results:
+   ```bash
+   python evaluation/rl/visualizer.py
+   ```
 
 ## Requirements
 
-See `requirements.txt` for dependencies.
+- Python 3.8+
+- PyTorch
+- Gymnasium
+- NumPy
+- Matplotlib
+- Seaborn (optional, for enhanced visualizations)
+
+## Results
+
+Detailed results from algorithm comparisons can be found in the `comparison_results` directory:
+- Performance metrics
+- Visualization outputs
+- Raw data
+- Statistical analyses
