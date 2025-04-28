@@ -2,55 +2,6 @@
 
 This repository implements and compares different approaches to multi-agent pathfinding, including classical search algorithms and reinforcement learning methods.
 
-## Repository Structure
-
-```
-.
-├── algorithms/
-│   ├── rl/
-│   │   ├── agents/             # RL agent implementations
-│   │   │   ├── dqn.py         # Deep Q-Network implementation
-│   │   │   └── a2c.py         # Advantage Actor-Critic implementation
-│   │   ├── environment/        # RL environment implementation
-│   │   │   └── pathfinding_env.py  # Main environment class
-│   │   └── training/          # Training utilities and scripts
-│   └── search/                # Classical search algorithms
-│       ├── astar.py          # A* implementation
-│       ├── dijkstra.py       # Dijkstra's algorithm implementation
-│       ├── grid_world.py     # Grid world environment for search
-│       ├── path_manager.py   # Path management utilities
-│       ├── movement_manager.py # Movement control utilities
-│       └── configurations.py  # Environment configurations
-├── comparison_results/        # Results from algorithm comparisons
-│   ├── sparse/               # Results with sparse goal distribution
-│   ├── dense/               # Results with dense goal distribution
-│   ├── search/              # Classical search algorithm results
-│   └── rl/                  # RL algorithm results
-├── evaluation/
-│   ├── rl/                  # RL evaluation tools
-│   │   ├── scripts/         # Evaluation scripts
-│   │   ├── config.json      # Configuration for evaluations
-│   │   ├── compare.py       # Algorithm comparison utilities
-│   │   ├── metrics.py       # Performance metrics collection
-│   │   ├── visualizer.py    # Visualization tools for RL results
-│   │   ├── base_evaluator.py # Base evaluation class
-│   │   ├── dqn_evaluator.py # DQN-specific evaluation
-│   │   └── a2c_evaluator.py # A2C-specific evaluation
-│   └── search/              # Search algorithm evaluation
-│       ├── scripts/         # Evaluation scripts
-│       ├── metrics.py       # Performance metrics
-│       ├── visualizer.py    # Visualization tools
-│       ├── visualization.py # Additional visualization utilities
-│       └── compare_algorithms.py # Algorithm comparison
-├── models/                  # Trained model checkpoints
-│   ├── dqn/                # DQN model saves
-│   └── a2c/                # A2C model saves
-└── utils/                  # Utility functions and tools
-    ├── visualizer.py       # General visualization utilities
-    ├── renderer.py         # Environment rendering tools
-    └── controls.py         # User control interface
-```
-
 ## Environment
 
 The environment supports both classical search and reinforcement learning approaches:
